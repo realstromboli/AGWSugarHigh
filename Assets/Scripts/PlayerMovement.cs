@@ -105,9 +105,9 @@ public class PlayerMovement : MonoBehaviour
 
             Invoke(nameof(ResetJump), jumpCooldown);
 
-            Invoke(nameof(ActivateDoubleJump), 0.25f);
+            Invoke(nameof(ActivateDoubleJump), 0.5f);
 
-            Invoke(nameof(DectivateDoubleJump), 0.8f);
+            Invoke(nameof(DectivateDoubleJump), 1.8f);
         }
         else if (Input.GetKey(jumpKey) && doubleJump)
         {
