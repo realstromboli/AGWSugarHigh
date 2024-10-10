@@ -8,6 +8,9 @@ public class Win_Lose : MonoBehaviour
     public int minDeath = -10;
     bool gameEnd = false;
 
+    public GameObject winScreen;
+    public GameObject loseScreen;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +49,11 @@ public class Win_Lose : MonoBehaviour
             //Calls win state
             callWin();
         }
+        if (other.gameObject.tag == "KillZone")
+        {
+            //Calls lose state
+            callLose();
+        }
     }
 
     private void callWin ()
@@ -59,6 +67,9 @@ public class Win_Lose : MonoBehaviour
 
         //Debug
         Debug.Log("Win!!");
+
+        //Shows win screen
+        winScreen.SetActive(true);
     }
 
     private void callLose()
@@ -72,5 +83,8 @@ public class Win_Lose : MonoBehaviour
 
         //Debug
         Debug.Log("Lose!");
+
+        //Shows lose screen
+        loseScreen.SetActive(true);
     }
 }
