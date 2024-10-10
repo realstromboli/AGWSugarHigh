@@ -6,6 +6,8 @@ TagManager:
   tags:
   - WallrunPickup
   - GrapplePickup
+  - WinZone
+  - KillZone
   layers:
   - Default
   - TransparentFX
