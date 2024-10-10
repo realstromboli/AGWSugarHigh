@@ -2915,6 +2915,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7481009008046558221, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 423574207}
+    - target: {fileID: 7481009008046558221, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
+      propertyPath: gunTip
+      value: 
+      objectReference: {fileID: 423574206}
+    - target: {fileID: 7481009008046558221, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
+      propertyPath: lineRenderer
+      value: 
+      objectReference: {fileID: 423574205}
     - target: {fileID: 8421802834845275674, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: m_Name
       value: Player
@@ -12316,6 +12328,21 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce5c4ee0bc860ff439dea1df7fa6832a, type: 3}
+--- !u!120 &423574205 stripped
+LineRenderer:
+  m_CorrespondingSourceObject: {fileID: 6448959966173769103, guid: ce5c4ee0bc860ff439dea1df7fa6832a, type: 3}
+  m_PrefabInstance: {fileID: 423574204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &423574206 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1010168557100596841, guid: ce5c4ee0bc860ff439dea1df7fa6832a, type: 3}
+  m_PrefabInstance: {fileID: 423574204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &423574207 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2140730851044406369, guid: ce5c4ee0bc860ff439dea1df7fa6832a, type: 3}
+  m_PrefabInstance: {fileID: 423574204}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &432647203
 Mesh:
   m_ObjectHideFlags: 0

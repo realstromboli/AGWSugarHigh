@@ -56,13 +56,16 @@ public class WallRunning : MonoBehaviour
     
     void Update()
     {
-        CheckForWall();
-        StateMachine();
+        if (pmScript.wallrunPowerActive)
+        {
+            CheckForWall();
+            StateMachine();
+        }
     }
 
     private void FixedUpdate()
     {
-        if (pmScript.wallrunning)
+        if (pmScript.wallrunning && pmScript.wallrunPowerActive)
         {
             WallRunningMovement();
         }
@@ -79,7 +82,7 @@ public class WallRunning : MonoBehaviour
         return !Physics.Raycast(transform.position, Vector3.down, minJumpHeight, whatIsGround);
     }
 
-    private void StateMachine()
+    public void StateMachine()
     {
         // Gets Inputs
         horizontalInput = Input.GetAxisRaw("Horizontal");
@@ -115,7 +118,7 @@ public class WallRunning : MonoBehaviour
             }
         }
 
-        // State 3 - Exiting
+        // State 2 - Exiting
         else if (exitingWall)
         {
             if (pmScript.wallrunning)
@@ -203,7 +206,7 @@ public class WallRunning : MonoBehaviour
         }
     }
 
-    private void StopWallRun()
+    public void StopWallRun()
     {
         pmScript.wallrunning = false;
 

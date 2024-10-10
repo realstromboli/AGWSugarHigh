@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 3713317019874749962}
   - component: {fileID: 6672668987188354677}
   - component: {fileID: 842851669651456744}
+  - component: {fileID: 7481009008046558221}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -247,7 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 8
   runSpeed: 18
-  walkSpeed: 6
+  walkSpeed: 8
   wallRunSpeed: 8
   groundDrag: 5
   jumpForce: 18
@@ -263,6 +264,11 @@ MonoBehaviour:
   orientation: {fileID: 8124157256785349120}
   state: 0
   wallrunning: 0
+  activeGrapple: 0
+  powerupActive: 0
+  powerupDuration: 20
+  wrScript: {fileID: 0}
+  freeze: 0
   exitingSlope: 0
 --- !u!114 &842851669651456744
 MonoBehaviour:
@@ -283,10 +289,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   wallRunForce: 200
-  wallJumpUpForce: 10
-  wallJumpSideForce: 20
+  wallJumpUpForce: 12
+  wallJumpSideForce: 100
   wallClimbSpeed: 3
-  maxWallRunTime: 1
+  maxWallRunTime: 5
   jumpKey: 32
   upWallRunKey: 114
   downWallRunKey: 102
@@ -294,6 +300,29 @@ MonoBehaviour:
   minJumpHeight: 2
   exitWallTime: 0.2
   useGravity: 1
-  gravityCounterForce: 40
+  gravityCounterForce: 30
   orientation: {fileID: 8124157256785349120}
   cam: {fileID: 0}
+--- !u!114 &7481009008046558221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8421802834845275674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cda93635813fa4b905eeeed8a98dce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  gunTip: {fileID: 0}
+  whatIsGrappleable:
+    serializedVersion: 2
+    m_Bits: 72
+  lineRenderer: {fileID: 0}
+  maxGrappleDistance: 40
+  grappleDelayTime: 0.25
+  overshootYAxis: 8
+  grappleCooldown: 0.2
+  grappleKey: 324
