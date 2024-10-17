@@ -183,6 +183,7 @@ GameObject:
   - component: {fileID: 842851669651456744}
   - component: {fileID: 7481009008046558221}
   - component: {fileID: -8614774004405644568}
+  - component: {fileID: 3892083343736028040}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -251,6 +252,7 @@ MonoBehaviour:
   runSpeed: 18
   walkSpeed: 8
   wallRunSpeed: 8
+  swingSpeed: 18
   groundDrag: 5
   jumpForce: 18
   jumpCooldown: 0.25
@@ -266,11 +268,14 @@ MonoBehaviour:
   state: 0
   wallrunning: 0
   activeGrapple: 0
+  swinging: 0
   wallrunPowerActive: 0
   grapplePowerActive: 0
+  swingPowerActive: 0
   powerupDuration: 20
   wrScript: {fileID: 0}
   grappleScript: {fileID: 0}
+  swingScript: {fileID: 0}
   freeze: 0
   exitingSlope: 0
 --- !u!114 &842851669651456744
@@ -344,3 +349,31 @@ MonoBehaviour:
   minDeath: -10
   winScreen: {fileID: 1455012609112494316, guid: 37eaa294d5c77f64e800c03cb65417c6, type: 3}
   loseScreen: {fileID: 718573624980223746, guid: 4c658f65ea4f83142ab316c210160e89, type: 3}
+--- !u!114 &3892083343736028040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8421802834845275674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fb0589b4bdd4a449c301d9d817cae3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lr: {fileID: 0}
+  gunTip: {fileID: 0}
+  cam: {fileID: 0}
+  player: {fileID: 6835013311803071418}
+  whatIsGrappleable:
+    serializedVersion: 2
+    m_Bits: 72
+  pmScript: {fileID: 6672668987188354677}
+  orientation: {fileID: 8124157256785349120}
+  rb: {fileID: 3713317019874749962}
+  horizontalThrustForce: 3000
+  forwardThrustForce: 10000
+  extendCableSpeed: 20
+  predictionSphereCastRadius: 3
+  predictionPoint: {fileID: 0}
+  swingKey: 323

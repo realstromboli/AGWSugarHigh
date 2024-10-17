@@ -49,7 +49,7 @@ public class Grappling : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (grappling && pmScript.grapplePowerActive)
+        if (grappling)
         {
             lineRenderer.SetPosition(0, gunTip.position);
         }

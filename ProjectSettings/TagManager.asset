@@ -8,6 +8,7 @@ TagManager:
   - GrapplePickup
   - WinZone
   - KillZone
+  - SwingPickup
   layers:
   - Default
   - TransparentFX

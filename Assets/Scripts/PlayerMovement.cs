@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public float walkSpeed;
     bool isRunning;
     public float wallRunSpeed;
+    public float swingSpeed;
 
     public float groundDrag;
 
@@ -49,13 +50,16 @@ public class PlayerMovement : MonoBehaviour
 
     public bool wallrunning;
     public bool activeGrapple;
+    public bool swinging;
 
     public bool wallrunPowerActive;
     public bool grapplePowerActive;
+    public bool swingPowerActive;
     public float powerupDuration;
 
     public WallRunning wrScript;
     public Grappling grappleScript;
+    public Swinging swingScript;
 
     public enum MovementState
     {
@@ -63,6 +67,8 @@ public class PlayerMovement : MonoBehaviour
         walking,
         running,
         wallrunning,
+        grappling,
+        swinging,
         air
     }
 
@@ -160,24 +166,43 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.walking;
             moveSpeed = walkSpeed;
         }
-
-        else
-        {
-            state = MovementState.air;
-        }
-
+        
         // Mode - Wallrunning
-        if (wallrunning)
+        else if (wallrunning)
         {
             state = MovementState.wallrunning;
             moveSpeed = wallRunSpeed;
             doubleJump = false;
+        }
+
+        // Mode - Grappling
+        else if (activeGrapple)
+        {
+            state = MovementState.grappling;
+            doubleJump = false;
+        }
+        
+        // Mode - Swinging
+        else if (swinging)
+        {
+            state = MovementState.swinging;
+            moveSpeed = swingSpeed;
+        }
+        
+        else
+        {
+            state = MovementState.air;
         }
     }
 
     private void MovePlayer()
     {
         if (activeGrapple)
+        {
+            return;
+        }
+
+        if (swinging)
         {
             return;
         }
@@ -372,6 +397,14 @@ public class PlayerMovement : MonoBehaviour
             //powerupIndicator.gameObject.SetActive(true);
             StartCoroutine(GrapplePowerCooldown());
         }
+        if (collider.tag == "SwingPickup")
+        {
+            //playerAudio.PlayOneShot(pickupSound, 1.0f);
+            swingPowerActive = true;
+            //Destroy(collider.gameObject);
+            //powerupIndicator.gameObject.SetActive(true);
+            StartCoroutine(SwingPowerCooldown());
+        }
     }
 
     IEnumerator WallrunPowerCooldown()
@@ -388,5 +421,12 @@ public class PlayerMovement : MonoBehaviour
         grapplePowerActive = false;
         //powerupIndicator.gameObject.SetActive(false);
         grappleScript.StopGrapple();
+    }
+
+    IEnumerator SwingPowerCooldown()
+    {
+        yield return new WaitForSeconds(powerupDuration);
+        swingPowerActive = false;
+        //powerupIndicator.gameObject.SetActive(false);
     }
 }
