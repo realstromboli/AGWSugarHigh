@@ -184,6 +184,7 @@ GameObject:
   - component: {fileID: 7481009008046558221}
   - component: {fileID: -8614774004405644568}
   - component: {fileID: 3892083343736028040}
+  - component: {fileID: 2761278844072249180}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -253,6 +254,9 @@ MonoBehaviour:
   walkSpeed: 8
   wallRunSpeed: 8
   swingSpeed: 18
+  dashAbilitySpeed: 100
+  dashSpeedChangeFactor: 5
+  maxYSpeed: 0
   groundDrag: 5
   jumpForce: 18
   jumpCooldown: 0.25
@@ -269,13 +273,16 @@ MonoBehaviour:
   wallrunning: 0
   activeGrapple: 0
   swinging: 0
+  dashing: 0
   wallrunPowerActive: 0
   grapplePowerActive: 0
   swingPowerActive: 0
+  dashPowerActive: 0
   powerupDuration: 20
   wrScript: {fileID: 0}
   grappleScript: {fileID: 0}
   swingScript: {fileID: 0}
+  dashScript: {fileID: 0}
   freeze: 0
   exitingSlope: 0
 --- !u!114 &842851669651456744
@@ -377,3 +384,27 @@ MonoBehaviour:
   predictionSphereCastRadius: 3
   predictionPoint: {fileID: 0}
   swingKey: 323
+--- !u!114 &2761278844072249180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8421802834845275674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d36c60161c5dfe544aa1288bb4ea8a27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orientation: {fileID: 8124157256785349120}
+  playerCam: {fileID: 0}
+  dashForce: 50
+  dashUpwardForce: 0
+  maxDashYSpeed: 15
+  dashDuration: 0.25
+  useCameraForward: 1
+  allowAllDirections: 1
+  disableGravity: 1
+  resetVel: 1
+  dashCooldown: 1.5
+  dashKey: 101
