@@ -13,6 +13,10 @@ public class PlayerMovement : MonoBehaviour
     bool isRunning;
     public float wallRunSpeed;
     public float swingSpeed;
+    public float dashAbilitySpeed;
+    public float dashSpeedChangeFactor;
+
+    public float maxYSpeed;
 
     public float groundDrag;
 
@@ -51,15 +55,18 @@ public class PlayerMovement : MonoBehaviour
     public bool wallrunning;
     public bool activeGrapple;
     public bool swinging;
+    public bool dashing;
 
     public bool wallrunPowerActive;
     public bool grapplePowerActive;
     public bool swingPowerActive;
+    public bool dashPowerActive;
     public float powerupDuration;
 
     public WallRunning wrScript;
     public Grappling grappleScript;
     public Swinging swingScript;
+    public Dashing dashScript;
 
     public enum MovementState
     {
@@ -69,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
         wallrunning,
         grappling,
         swinging,
+        dashing,
         air
     }
 
@@ -83,6 +91,8 @@ public class PlayerMovement : MonoBehaviour
         doubleJump = false;
         wallrunPowerActive = false;
         grapplePowerActive = false;
+        swingPowerActive = false;
+        dashPowerActive = false;
         wrScript = GetComponent<WallRunning>();
         grappleScript = GetComponent<Grappling>();
     }
@@ -130,7 +140,7 @@ public class PlayerMovement : MonoBehaviour
 
             Invoke(nameof(ActivateDoubleJump), 0.4f);
 
-            Invoke(nameof(DectivateDoubleJump), 1.0f);
+            Invoke(nameof(DectivateDoubleJump), 0.9f);
         }
         else if (Input.GetKey(jumpKey) && doubleJump)
         {
@@ -144,13 +154,18 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    private float desiredMoveSpeed;
+    private float lastDesiredMoveSpeed;
+    private MovementState lastState;
+    private bool keepMomentum;
+
     private void StateHandler()
     {
         // Mode - Freeze
         if (freeze)
         {
             state = MovementState.freeze;
-            moveSpeed = 0;
+            desiredMoveSpeed = 0;
             rb.velocity = Vector3.zero;
         }
         
@@ -158,20 +173,20 @@ public class PlayerMovement : MonoBehaviour
         else if(grounded && Input.GetKey(runKey))
         {
             state = MovementState.running;
-            moveSpeed = runSpeed;
+            desiredMoveSpeed = runSpeed;
         }
 
         else if (grounded)
         {
             state = MovementState.walking;
-            moveSpeed = walkSpeed;
+            desiredMoveSpeed = walkSpeed;
         }
         
         // Mode - Wallrunning
         else if (wallrunning)
         {
             state = MovementState.wallrunning;
-            moveSpeed = wallRunSpeed;
+            desiredMoveSpeed = wallRunSpeed;
             doubleJump = false;
         }
 
@@ -186,17 +201,87 @@ public class PlayerMovement : MonoBehaviour
         else if (swinging)
         {
             state = MovementState.swinging;
-            moveSpeed = swingSpeed;
+            desiredMoveSpeed = swingSpeed;
+        }
+
+        // Mode - Dashing
+        else if (dashing)
+        {
+            state = MovementState.dashing;
+            desiredMoveSpeed = dashAbilitySpeed;
+            speedChangeFactor = dashSpeedChangeFactor;
         }
         
         else
         {
             state = MovementState.air;
+
+            if (desiredMoveSpeed < runSpeed)
+            {
+                desiredMoveSpeed = walkSpeed;
+            }
+            else
+            {
+                desiredMoveSpeed = runSpeed;
+            }
         }
+
+        bool desiredMoveSpeedHasChanged = desiredMoveSpeed != lastDesiredMoveSpeed;
+        if (lastState == MovementState.dashing)
+        {
+            keepMomentum = true;
+        }
+
+        if (desiredMoveSpeedHasChanged)
+        {
+            if (keepMomentum)
+            {
+                StopCoroutine(SmoothlyLerpMoveSpeed());
+                StartCoroutine(SmoothlyLerpMoveSpeed());
+            }
+            else
+            {
+                StopCoroutine(SmoothlyLerpMoveSpeed());
+                moveSpeed = desiredMoveSpeed;
+            }
+        }
+
+        lastDesiredMoveSpeed = desiredMoveSpeed;
+        lastState = state;
+    }
+
+    private float speedChangeFactor;
+
+    private IEnumerator SmoothlyLerpMoveSpeed()
+    {
+        // smoothly transitions moveSpeed to desiredMoveSpeed
+        float time = 0;
+        float difference = Mathf.Abs(desiredMoveSpeed - moveSpeed);
+        float startValue = moveSpeed;
+
+        float boostFactor = speedChangeFactor;
+
+        while (time < difference)
+        {
+            moveSpeed = Mathf.Lerp(startValue, desiredMoveSpeed, time / difference);
+
+            time += Time.deltaTime * boostFactor;
+
+            yield return null;
+        }
+
+        moveSpeed = desiredMoveSpeed;
+        speedChangeFactor = 1f;
+        keepMomentum = false;
     }
 
     private void MovePlayer()
     {
+        if (state == MovementState.dashing)
+        {
+            return;
+        }
+        
         if (activeGrapple)
         {
             return;
@@ -222,7 +307,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //on ground
-        if (grounded)
+        else if (grounded)
         {
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
         }
@@ -263,6 +348,12 @@ public class PlayerMovement : MonoBehaviour
                 Vector3 limitedVelocity = flatVelocity.normalized * moveSpeed;
                 rb.velocity = new Vector3(limitedVelocity.x, rb.velocity.y, limitedVelocity.z);
             }
+        }
+
+        // limit y velocity
+        if (maxYSpeed != 0 && rb.velocity.y > maxYSpeed)
+        {
+            rb.velocity = new Vector3(rb.velocity.x, maxYSpeed, rb.velocity.z);
         }
     }
 
@@ -405,6 +496,14 @@ public class PlayerMovement : MonoBehaviour
             //powerupIndicator.gameObject.SetActive(true);
             StartCoroutine(SwingPowerCooldown());
         }
+        if (collider.tag == "DashPickup")
+        {
+            //playerAudio.PlayOneShot(pickupSound, 1.0f);
+            dashPowerActive = true;
+            //Destroy(collider.gameObject);
+            //powerupIndicator.gameObject.SetActive(true);
+            StartCoroutine(DashPowerCooldown());
+        }
     }
 
     IEnumerator WallrunPowerCooldown()
@@ -428,5 +527,14 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(powerupDuration);
         swingPowerActive = false;
         //powerupIndicator.gameObject.SetActive(false);
+        swingScript.StopSwing();
+    }
+
+    IEnumerator DashPowerCooldown()
+    {
+        yield return new WaitForSeconds(powerupDuration);
+        dashPowerActive = false;
+        //powerupIndicator.gameObject.SetActive(false);
+        dashScript.ResetDash();
     }
 }

@@ -9,7 +9,7 @@ TagManager:
   - WinZone
   - KillZone
   - SwingPickup
-  - CheckPoint
+  - DashPickup
   layers:
   - Default
   - TransparentFX
