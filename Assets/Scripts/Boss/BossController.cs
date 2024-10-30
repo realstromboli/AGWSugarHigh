@@ -9,14 +9,14 @@ public class BossController : MonoBehaviour
 
     [Header("Boss Movement")]
     public float turnRate = 1;
-        Vector3 toTarget;
-        Quaternion playerPos;
+    private Vector3 toTarget;
+    private Quaternion playerPos;
 
     [Header("Boss Attack")]
-    private bool isAggro = false;    
     public float attackRate;
     public float aggroLength;
     public float tillAttack;
+    private bool isAggro = false;
     public GameObject angryEyes;
     public GameObject projectile;
 
@@ -44,8 +44,8 @@ public class BossController : MonoBehaviour
             CancelInvoke("aggro");
 
             //Temp Dead Position
-            transform.rotation = new Quaternion(0.417919606f, 0.610811353f, 0.492304474f, 0.45813641f);
-            transform.position = new Vector3(0, 1.92999995f, 0);
+            transform.rotation = new Quaternion(0.4f, 0.6f, 0.5f, 0.4f);
+            transform.position = new Vector3(0, 1.9f, 0);
         }
 
         //Temp kill switch

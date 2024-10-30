@@ -5,7 +5,9 @@ using UnityEngine;
 
 public class Win_Lose : MonoBehaviour
 {
-    public int minDeath = -10;
+    private GameManager gameManager;
+    
+    public float minDeath = -10;
     bool gameEnd = false;
 
     public GameObject winScreen;
@@ -14,7 +16,7 @@ public class Win_Lose : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -28,15 +30,19 @@ public class Win_Lose : MonoBehaviour
         }
 
         //Resets the level once the game has ended
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             if (gameEnd)
             {
-                //Stops game movement
+                //Starts game movement
                 Cursor.lockState = CursorLockMode.Locked;
                 Time.timeScale = 1;
-                
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+                gameManager.callRespawn();
+
+                //Resets game
+                gameEnd = false;
+                loseScreen.SetActive(false);
             }
         }
     }
@@ -53,6 +59,11 @@ public class Win_Lose : MonoBehaviour
         {
             //Calls lose state
             callLose();
+        }
+
+        if (other.tag == "CheckPoint")
+        {
+            gameManager.respawn.UpdateCheckpoint();
         }
     }
 
@@ -76,13 +87,14 @@ public class Win_Lose : MonoBehaviour
     {
         //Marks game as ended
         gameEnd = true;
+        gameManager.deathCount++;
 
         //Stops game movement
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0;
 
         //Debug
-        Debug.Log("Lose!");
+        //Debug.Log("Lose!");
 
         //Shows lose screen
         loseScreen.SetActive(true);
