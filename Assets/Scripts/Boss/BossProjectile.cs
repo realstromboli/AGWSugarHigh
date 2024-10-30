@@ -59,7 +59,6 @@ public class BossProjectile : MonoBehaviour
         if (other.tag == "Player")
         {
             launchPlayer();
-            Debug.Log("hit player");
         }
     }
 
