@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class AbilityUI : MonoBehaviour
 {
     private PlayerMovement player;
+    private Timer timer;
 
     //Text Visuals
     public TextMeshProUGUI abilityText;
@@ -20,19 +21,14 @@ public class AbilityUI : MonoBehaviour
     public Color grappleColor;
     public Color swingColor;*/
 
-    //Time Number
-    public float time;
-    //Timer On or Off
-    private bool timerOn = false;
-
-    int seconds;
-
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerMovement>();
         abilityText = GameObject.Find("Ability").GetComponent<TextMeshProUGUI>();
         abilityDuration = GameObject.Find("Ability Duration").GetComponent<TextMeshProUGUI>();
+
+        timer = GameObject.Find("UI").GetComponent<Timer>();
     }
 
     // Update is called once per frame
@@ -40,43 +36,37 @@ public class AbilityUI : MonoBehaviour
     {
         if (player.wallrunPowerActive == true)
         {
-            abilityText.text = "Ability: Wall Run";
-            timerOn = true;
-            time = player.powerupDuration;
-
+            if(!timer.timerOn)
+            {
+                abilityText.text = "Ability: Wall Run";
+                timer.timerOn = true;
+                timer.enabled = true;
+                timer.time = player.powerupDuration;
+            }
         }
         else if (player.grapplePowerActive == true)
         {
-            abilityText.text = "Ability: Grapple";
-            timerOn = true;
-            time = player.powerupDuration;
+            if (!timer.timerOn)
+            {
+                abilityText.text = "Ability: Grapple";
+                timer.timerOn = true;
+                timer.enabled = true;
+                timer.time = player.powerupDuration;
+            }
         }
         else if (player.swingPowerActive == true)
         {
-            abilityText.text = "Ability: Swing";
-            timerOn = true;
-            time = player.powerupDuration;
+            if (!timer.timerOn)
+            {
+                abilityText.text = "Ability: Swing";
+                timer.timerOn = true;
+                timer.enabled = true;
+                timer.time = player.powerupDuration;
+            }
         }
         else
         {
             abilityText.text = "Ability: None";
         }
-
-        if (timerOn)
-        {
-            time -= Time.deltaTime;
-            updateTimer(time);
-        }
-        else
-        {
-            abilityDuration.text = " ";
-        }
-
-        seconds = (int)(time % 60);
-    }
-
-    void updateTimer(float currentTime)
-    {
-        abilityDuration.text = seconds + " seconds";
     }
 }

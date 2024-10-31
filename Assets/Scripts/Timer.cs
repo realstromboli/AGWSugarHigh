@@ -12,6 +12,8 @@ public class Timer : MonoBehaviour
     public bool timerOn = false;
     //Timer counts up (best time) or counts down (run down clock)
     public bool timerUp = false;
+    
+    public bool worldTimer = true;
 
     //Timer Visuals
     public TextMeshProUGUI timeText;
@@ -23,7 +25,10 @@ public class Timer : MonoBehaviour
     {
         timerOn = true;
 
-        timeText = GameObject.Find("Timer").GetComponent<TextMeshProUGUI>();
+        if (worldTimer)
+        {
+            timeText = GameObject.Find("Timer").GetComponent<TextMeshProUGUI>();
+        }
     }
 
     // Update is called once per frame
