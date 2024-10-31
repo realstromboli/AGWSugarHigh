@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
+    private bool[] levelsUnlocked = {true, true, false, false, false, false};
+
     public void StartGame()
     {
         //Change to game scene
@@ -28,25 +30,46 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Level Select");
     }
 
+    public void OpenTitle()
+    {
+        //Change to level select menu
+        SceneManager.LoadScene("Title");
+    }
+
     public void LevelSelect(int level)
     {
         //Change to selected level
         switch (level)
         {
             case 1:
-                SceneManager.LoadScene("Level 1");
+                if(levelsUnlocked[1] == true)
+                {
+                    SceneManager.LoadScene("Level 1");
+                }
                 break;
             case 2:
-                SceneManager.LoadScene("Level 2");
+                if (levelsUnlocked[2] == true)
+                {
+                    SceneManager.LoadScene("Level 2");
+                }
                 break;
             case 3:
-                SceneManager.LoadScene("Level 3");
+                if (levelsUnlocked[3] == true)
+                {
+                    SceneManager.LoadScene("Level 3");
+                }
                 break;
             case 4:
-                SceneManager.LoadScene("Level 4");
+                if (levelsUnlocked[4] == true)
+                {
+                    SceneManager.LoadScene("Level 4");
+                }
                 break;
             case 5:
-                SceneManager.LoadScene("Level 5");
+                if (levelsUnlocked[5] == true)
+                {
+                    SceneManager.LoadScene("Level 5");
+                }
                 break;
         }
         

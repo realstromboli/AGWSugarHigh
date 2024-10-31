@@ -12,23 +12,27 @@ public class AbilityUI : MonoBehaviour
     public TextMeshProUGUI abilityText;
     public TextMeshProUGUI abilityDuration;
 
-    public Image bg1;
+    /*public Image bg1;
     public Image bg2;
 
     public Color defaultColor;
     public Color wallRunColor;
     public Color grappleColor;
-    public Color swingColor;
+    public Color swingColor;*/
 
     //Time Number
-    private float time;
+    public float time;
     //Timer On or Off
     private bool timerOn = false;
+
+    int seconds;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerMovement>();
+        abilityText = GameObject.Find("Ability").GetComponent<TextMeshProUGUI>();
+        abilityDuration = GameObject.Find("Ability Duration").GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -37,30 +41,25 @@ public class AbilityUI : MonoBehaviour
         if (player.wallrunPowerActive == true)
         {
             abilityText.text = "Ability: Wall Run";
-            abilityDuration.text = string.Format("{00}", player.powerupDuration) + " seconds";
-            bg1.color = wallRunColor;
-            bg2.color = wallRunColor;
+            timerOn = true;
+            time = player.powerupDuration;
+
         }
         else if (player.grapplePowerActive == true)
         {
             abilityText.text = "Ability: Grapple";
-            abilityDuration.text = string.Format("{00}", player.powerupDuration) + " seconds";
-            bg1.color = grappleColor;
-            bg2.color = grappleColor;
+            timerOn = true;
+            time = player.powerupDuration;
         }
         else if (player.swingPowerActive == true)
         {
             abilityText.text = "Ability: Swing";
-            abilityDuration.text = string.Format("{00}", player.powerupDuration) + " seconds";
-            bg1.color = swingColor;
-            bg2.color = swingColor;
+            timerOn = true;
+            time = player.powerupDuration;
         }
         else
         {
             abilityText.text = "Ability: None";
-            abilityDuration.text = " ";
-            bg1.color = defaultColor;
-            bg2.color = defaultColor;
         }
 
         if (timerOn)
@@ -68,13 +67,16 @@ public class AbilityUI : MonoBehaviour
             time -= Time.deltaTime;
             updateTimer(time);
         }
+        else
+        {
+            abilityDuration.text = " ";
+        }
 
-        //seconds = (int)(time % 60);
-        //minutes = (int)(time / 60);
+        seconds = (int)(time % 60);
     }
 
     void updateTimer(float currentTime)
     {
-
+        abilityDuration.text = seconds + " seconds";
     }
 }

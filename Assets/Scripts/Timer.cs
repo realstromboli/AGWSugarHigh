@@ -22,6 +22,8 @@ public class Timer : MonoBehaviour
     void Start()
     {
         timerOn = true;
+
+        timeText = GameObject.Find("Timer").GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame

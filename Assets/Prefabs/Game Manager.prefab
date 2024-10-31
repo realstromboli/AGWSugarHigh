@@ -9,9 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5295774286736137966}
-  - component: {fileID: 6861714792845548718}
-  - component: {fileID: 3924069144817609507}
   - component: {fileID: -1438889710329877704}
+  - component: {fileID: 3924069144817609507}
   - component: {fileID: 779562096160067122}
   m_Layer: 0
   m_Name: Game Manager
@@ -35,7 +34,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6861714792845548718
+--- !u!114 &-1438889710329877704
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44,10 +43,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6551288485155348449}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae18644a84c175408d148beb33fe01a, type: 3}
+  m_Script: {fileID: 11500000, guid: ae90f8a4b0cbf2c45aba52033b0c1750, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pauseScreen: {fileID: 0}
+  respawn: {fileID: 0}
+  deathCount: 0
 --- !u!114 &3924069144817609507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,19 +65,6 @@ MonoBehaviour:
   timerOn: 0
   timerUp: 1
   timeText: {fileID: 0}
---- !u!114 &-1438889710329877704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6551288485155348449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae90f8a4b0cbf2c45aba52033b0c1750, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathCount: 0
 --- !u!114 &779562096160067122
 MonoBehaviour:
   m_ObjectHideFlags: 0
