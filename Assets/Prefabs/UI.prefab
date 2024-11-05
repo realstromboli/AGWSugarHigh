@@ -1574,7 +1574,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -296, y: 170}
+  m_AnchoredPosition: {x: -296, y: 217}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1949934223258550149
@@ -1847,7 +1847,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2430451082913086737
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2524,7 +2524,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   abilityText: {fileID: 0}
   abilityDuration: {fileID: 0}
-  time: 0
 --- !u!114 &3744099795567114318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2540,6 +2539,7 @@ MonoBehaviour:
   time: 0
   timerOn: 0
   timerUp: 0
+  worldTimer: 0
   timeText: {fileID: 7877373140798412869}
 --- !u!1 &4595709789469386183
 GameObject:
@@ -3108,7 +3108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5192505648269853584
 RectTransform:
   m_ObjectHideFlags: 0

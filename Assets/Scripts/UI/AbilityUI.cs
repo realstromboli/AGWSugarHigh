@@ -67,6 +67,7 @@ public class AbilityUI : MonoBehaviour
         else
         {
             abilityText.text = "Ability: None";
+            abilityDuration.text = "";
         }
     }
 }
