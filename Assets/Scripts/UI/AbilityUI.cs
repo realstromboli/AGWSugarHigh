@@ -7,28 +7,28 @@ using UnityEngine.UI;
 public class AbilityUI : MonoBehaviour
 {
     private PlayerMovement player;
+    private Timer timer;
 
     //Text Visuals
     public TextMeshProUGUI abilityText;
     public TextMeshProUGUI abilityDuration;
 
-    public Image bg1;
+    /*public Image bg1;
     public Image bg2;
 
     public Color defaultColor;
     public Color wallRunColor;
     public Color grappleColor;
-    public Color swingColor;
-
-    //Time Number
-    private float time;
-    //Timer On or Off
-    private bool timerOn = false;
+    public Color swingColor;*/
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerMovement>();
+        abilityText = GameObject.Find("Ability").GetComponent<TextMeshProUGUI>();
+        abilityDuration = GameObject.Find("Ability Duration").GetComponent<TextMeshProUGUI>();
+
+        timer = GameObject.Find("UI").GetComponent<Timer>();
     }
 
     // Update is called once per frame
@@ -36,45 +36,38 @@ public class AbilityUI : MonoBehaviour
     {
         if (player.wallrunPowerActive == true)
         {
-            abilityText.text = "Ability: Wall Run";
-            abilityDuration.text = string.Format("{00}", player.powerupDuration) + " seconds";
-            bg1.color = wallRunColor;
-            bg2.color = wallRunColor;
+            if(!timer.timerOn)
+            {
+                abilityText.text = "Ability: Wall Run";
+                timer.timerOn = true;
+                timer.enabled = true;
+                timer.time = player.powerupDuration;
+            }
         }
         else if (player.grapplePowerActive == true)
         {
-            abilityText.text = "Ability: Grapple";
-            abilityDuration.text = string.Format("{00}", player.powerupDuration) + " seconds";
-            bg1.color = grappleColor;
-            bg2.color = grappleColor;
+            if (!timer.timerOn)
+            {
+                abilityText.text = "Ability: Grapple";
+                timer.timerOn = true;
+                timer.enabled = true;
+                timer.time = player.powerupDuration;
+            }
         }
         else if (player.swingPowerActive == true)
         {
-            abilityText.text = "Ability: Swing";
-            abilityDuration.text = string.Format("{00}", player.powerupDuration) + " seconds";
-            bg1.color = swingColor;
-            bg2.color = swingColor;
+            if (!timer.timerOn)
+            {
+                abilityText.text = "Ability: Swing";
+                timer.timerOn = true;
+                timer.enabled = true;
+                timer.time = player.powerupDuration;
+            }
         }
         else
         {
             abilityText.text = "Ability: None";
-            abilityDuration.text = " ";
-            bg1.color = defaultColor;
-            bg2.color = defaultColor;
+            abilityDuration.text = "";
         }
-
-        if (timerOn)
-        {
-            time -= Time.deltaTime;
-            updateTimer(time);
-        }
-
-        //seconds = (int)(time % 60);
-        //minutes = (int)(time / 60);
-    }
-
-    void updateTimer(float currentTime)
-    {
-
     }
 }

@@ -23,8 +23,6 @@ public class Pause : MonoBehaviour
                 
         }
     }
-
-
     public void PauseGame()
     {
         //Shows pause menu screen

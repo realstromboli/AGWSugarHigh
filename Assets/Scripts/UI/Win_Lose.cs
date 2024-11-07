@@ -6,9 +6,11 @@ using UnityEngine;
 public class Win_Lose : MonoBehaviour
 {
     private GameManager gameManager;
-    
+    private Respawn respawn;
+    private Timer timer;
+
     public float minDeath = -10;
-    bool gameEnd = false;
+    public bool gameEnd = false;
 
     public GameObject winScreen;
     public GameObject loseScreen;
@@ -17,6 +19,14 @@ public class Win_Lose : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        respawn = GameObject.Find("Game Manager").GetComponent<Respawn>();
+        timer = GameObject.Find("Game Manager").GetComponent<Timer>();
+
+        winScreen = GameObject.Find("Win Screen");
+        winScreen.SetActive(false);
+
+        loseScreen = GameObject.Find("Lose Screen");
+        loseScreen.SetActive(false);
     }
 
     // Update is called once per frame
@@ -38,7 +48,7 @@ public class Win_Lose : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Time.timeScale = 1;
 
-                gameManager.callRespawn();
+                respawn.respawn();
 
                 //Resets game
                 gameEnd = false;
@@ -61,13 +71,14 @@ public class Win_Lose : MonoBehaviour
             callLose();
         }
 
+        //Updates Respawn Point when touching Checkpoints
         if (other.tag == "CheckPoint")
         {
-            gameManager.respawn.UpdateCheckpoint();
+            respawn.UpdateCheckpoint();
         }
     }
 
-    private void callWin ()
+    private void callWin()
     {
         //Marks game as ended
         gameEnd = true;
@@ -87,7 +98,6 @@ public class Win_Lose : MonoBehaviour
     {
         //Marks game as ended
         gameEnd = true;
-        gameManager.deathCount++;
 
         //Stops game movement
         Cursor.lockState = CursorLockMode.None;
@@ -98,5 +108,18 @@ public class Win_Lose : MonoBehaviour
 
         //Shows lose screen
         loseScreen.SetActive(true);
+    }
+
+    public void loseRespawn()
+    {
+        //Starts game movement
+        Cursor.lockState = CursorLockMode.Locked;
+        Time.timeScale = 1;
+
+        respawn.respawn();
+
+        //Resets game
+        gameEnd = false;
+        loseScreen.SetActive(false);
     }
 }
