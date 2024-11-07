@@ -105,8 +105,12 @@ public class PlayerMovement : MonoBehaviour
         Run();
         StateHandler();
 
+        RaycastHit hit;
         //ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
+        //grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
+
+        grounded = Physics.SphereCast(transform.position + Vector3.up * 5, 3, Vector3.down, out hit, playerHeight, whatIsGround);
+
 
         //handles drag per ground check
         if (grounded && !activeGrapple)
