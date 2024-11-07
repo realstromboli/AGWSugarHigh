@@ -2674,6 +2674,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 676739852}
     - target: {fileID: 6672668987188354677, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
+      propertyPath: maxYSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6672668987188354677, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: playerHeight
       value: 4
       objectReference: {fileID: 0}
