@@ -254,16 +254,16 @@ MonoBehaviour:
   walkSpeed: 8
   wallRunSpeed: 8
   swingSpeed: 18
-  dashAbilitySpeed: 100
-  dashSpeedChangeFactor: 5
-  maxYSpeed: 0
+  dashAbilitySpeed: 50
+  dashSpeedChangeFactor: 2
+  maxYSpeed: 25
   groundDrag: 5
   jumpForce: 18
   jumpCooldown: 0.25
   airMultiplier: 0.5
   jumpKey: 32
   runKey: 304
-  playerHeight: 2
+  playerHeight: 4
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
@@ -278,7 +278,7 @@ MonoBehaviour:
   grapplePowerActive: 0
   swingPowerActive: 0
   dashPowerActive: 0
-  powerupDuration: 20
+  powerupDuration: 30
   wrScript: {fileID: 0}
   grappleScript: {fileID: 0}
   swingScript: {fileID: 0}
@@ -354,8 +354,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDeath: -10
-  winScreen: {fileID: 1455012609112494316, guid: 37eaa294d5c77f64e800c03cb65417c6, type: 3}
-  loseScreen: {fileID: 718573624980223746, guid: 4c658f65ea4f83142ab316c210160e89, type: 3}
+  gameEnd: 0
+  winScreen: {fileID: 0}
+  loseScreen: {fileID: 0}
 --- !u!114 &3892083343736028040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,5 +407,5 @@ MonoBehaviour:
   allowAllDirections: 1
   disableGravity: 1
   resetVel: 1
-  dashCooldown: 1.5
+  dashCooldown: 1.1
   dashKey: 101

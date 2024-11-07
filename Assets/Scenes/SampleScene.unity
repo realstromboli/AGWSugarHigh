@@ -2633,30 +2633,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8614774004405644568, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
-      propertyPath: winScreen
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: -8614774004405644568, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
-      propertyPath: loseScreen
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 842851669651456744, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: cam
       value: 
       objectReference: {fileID: 532074380}
     - target: {fileID: 2761278844072249180, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
-      propertyPath: dashForce
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 2761278844072249180, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: playerCam
       value: 
       objectReference: {fileID: 806212021}
-    - target: {fileID: 2761278844072249180, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
-      propertyPath: dashCooldown
-      value: 1.1
-      objectReference: {fileID: 0}
     - target: {fileID: 3892083343736028040, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: lr
       value: 
@@ -2673,42 +2657,6 @@ PrefabInstance:
       propertyPath: predictionPoint
       value: 
       objectReference: {fileID: 676739852}
-    - target: {fileID: 6672668987188354677, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
-      propertyPath: maxYSpeed
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6672668987188354677, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
-      propertyPath: playerHeight
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6672668987188354677, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
-      propertyPath: dashPowerActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6672668987188354677, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
-      propertyPath: powerupDuration
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 6672668987188354677, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
-      propertyPath: dashAbilitySpeed
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 6672668987188354677, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
-      propertyPath: swingPowerActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6672668987188354677, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
-      propertyPath: grapplePowerActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6672668987188354677, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
-      propertyPath: wallrunPowerActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6672668987188354677, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
-      propertyPath: dashSpeedChangeFactor
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6835013311803071418, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
