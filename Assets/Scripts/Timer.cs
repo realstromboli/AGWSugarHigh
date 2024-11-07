@@ -23,10 +23,9 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timerOn = true;
-
         if (worldTimer)
         {
+            timerOn = true;
             timeText = GameObject.Find("Timer").GetComponent<TextMeshProUGUI>();
         }
     }
