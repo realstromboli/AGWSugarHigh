@@ -10061,7 +10061,7 @@ GameObject:
   - component: {fileID: 599452160}
   - component: {fileID: 599452159}
   - component: {fileID: 599452158}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28250,11 +28250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6835013311803071418, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 13.07
       objectReference: {fileID: 0}
     - target: {fileID: 6835013311803071418, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 29.18
       objectReference: {fileID: 0}
     - target: {fileID: 6835013311803071418, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: m_LocalRotation.w
