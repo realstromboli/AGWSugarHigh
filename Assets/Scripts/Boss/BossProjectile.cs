@@ -7,6 +7,7 @@ public class BossProjectile : MonoBehaviour
     private GameObject player;
     private Rigidbody playerRB;
     private SphereCollider AOE;
+    private BossController boss;
 
     private Vector3 target;
     private bool hit = false;
@@ -19,17 +20,18 @@ public class BossProjectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*Finds and sets AOE
-        AOE = transform.GetChild(1).gameObject;
-        AOE.transform.localScale = new Vector3(AOEsize, AOEsize, AOEsize);*/
-
         AOE = GetComponent<SphereCollider>();
         AOE.radius = AOEsize;
 
         //Finds player in game and records their position when spawned
         player = GameObject.Find("Player");
         playerRB = GameObject.Find("Player").GetComponent<Rigidbody>();
+        boss = GameObject.Find("Boss").GetComponent<BossController>();
         target = player.transform.position;
+
+        speed = boss.projectileSpeed;
+        AOEsize = boss.AOEsize;
+        launchforce = boss.projectileLaunchForce;
     }
 
     // Update is called once per frame
@@ -37,7 +39,7 @@ public class BossProjectile : MonoBehaviour
     {
         //Checks to see if projectile has already reached its target
         if (!hit)
-        {   
+        {
             //Travels toward target
             var step = speed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, target, step);
@@ -64,8 +66,44 @@ public class BossProjectile : MonoBehaviour
 
     void launchPlayer()
     {
+        Vector3 heading = target - player.transform.position;
+
+        if (heading == new Vector3(0, 0, 0))
+        {
+            heading = boss.transform.position - player.transform.position;
+        }
+
+        var distance = heading.magnitude;
+        Vector3 direction = heading / distance; // This is now the normalized direction.
+
+        Debug.Log(direction);
+
+        /*if (direction.x > 0 && direction.x < 1)
+        {
+            direction.x = 1f;
+        }
+        if (direction.x < 0 && direction.x > -1)
+        {
+            direction.x = -1f;
+        }
+        if (direction.z > 0 && direction.z < 1)
+        {
+            direction.z = 1f;
+        }
+        if (direction.z < 0 && direction.z > -1)
+        {
+            direction.z = -1f;
+        }*/
+
+        if (direction.y < -0.5f)
+        {
+            direction.y = -0.5f;
+        }
+
         playerRB.velocity = new Vector3(playerRB.velocity.x, 0f, playerRB.velocity.z);
-        playerRB.AddForce(transform.up * launchforce, ForceMode.Impulse);
+        playerRB.AddForce((-direction + new Vector3(0, 0.3f, 0)) * launchforce, ForceMode.Impulse);
+
+        Debug.Log(direction);
     }
 
     IEnumerator explode()
