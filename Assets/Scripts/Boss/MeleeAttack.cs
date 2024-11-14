@@ -11,6 +11,7 @@ public class MeleeAttack : MonoBehaviour
     public bool inRange;
 
     private float launchForce;
+    private float verticalLaunchForce;
 
     private void Start()
     {
@@ -19,11 +20,13 @@ public class MeleeAttack : MonoBehaviour
         boss = GameObject.Find("Boss").GetComponent<BossController>();
 
         launchForce = boss.meleeLaunchForce;
+        verticalLaunchForce = boss.verticalLaunchForce;
     }
 
     private void Update()
     {
         launchForce = boss.meleeLaunchForce;
+        verticalLaunchForce = boss.verticalLaunchForce;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -55,7 +58,7 @@ public class MeleeAttack : MonoBehaviour
         direction = -direction * launchForce;
 
         //Fix vertical launch so player launches up every timer
-        direction.y = 20f;
+        direction.y = verticalLaunchForce;
 
         playerRB.velocity = new Vector3(playerRB.velocity.x, 0f, playerRB.velocity.z);
         playerRB.AddForce(direction, ForceMode.Impulse);

@@ -356,6 +356,7 @@ MonoBehaviour:
   tillAttack: 1
   angryEyes: {fileID: 529677506}
   melee: {fileID: 0}
+  verticalLaunchForce: 25
   meleeLaunchForce: 1000
   projectile: {fileID: 9063837253324300475, guid: ee10914029a757745b70922436542924, type: 3}
   projectileSpeed: 20
@@ -682,7 +683,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 2.72
-  m_Center: {x: 0, y: -1, z: 0}
+  m_Center: {x: 0, y: -1.77, z: 0}
 --- !u!114 &558754399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1134,6 +1135,18 @@ PrefabInstance:
     - target: {fileID: 5192505648269853584, guid: ba006ee3ce6b9b9458f3ae2314f4b6f9, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -35.999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 6253337429628197667, guid: ba006ee3ce6b9b9458f3ae2314f4b6f9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 779562096160067122, guid: 5fea18463d175d24ab231e5c15e1cba1, type: 3}
+    - target: {fileID: 6253337429628197667, guid: ba006ee3ce6b9b9458f3ae2314f4b6f9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: loseRespawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 6253337429628197667, guid: ba006ee3ce6b9b9458f3ae2314f4b6f9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Respawn, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6485992475211705901, guid: ba006ee3ce6b9b9458f3ae2314f4b6f9, type: 3}
       propertyPath: m_IsActive

@@ -85,6 +85,7 @@ public class Win_Lose : MonoBehaviour
 
         //Stops game movement
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         Time.timeScale = 0;
 
         //Debug
@@ -101,6 +102,7 @@ public class Win_Lose : MonoBehaviour
 
         //Stops game movement
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         Time.timeScale = 0;
 
         //Debug

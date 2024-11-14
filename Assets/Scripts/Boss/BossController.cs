@@ -23,6 +23,7 @@ public class BossController : MonoBehaviour
 
     [Header("Melee")]
     public MeleeAttack melee;
+    public float verticalLaunchForce;
     public float meleeLaunchForce;
 
     [Header("Projectile")]
