@@ -85,6 +85,7 @@ public class Win_Lose : MonoBehaviour
 
         //Stops game movement
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         Time.timeScale = 0;
 
         //Debug
@@ -101,6 +102,7 @@ public class Win_Lose : MonoBehaviour
 
         //Stops game movement
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         Time.timeScale = 0;
 
         //Debug
@@ -108,18 +110,5 @@ public class Win_Lose : MonoBehaviour
 
         //Shows lose screen
         loseScreen.SetActive(true);
-    }
-
-    public void loseRespawn()
-    {
-        //Starts game movement
-        Cursor.lockState = CursorLockMode.Locked;
-        Time.timeScale = 1;
-
-        respawn.respawn();
-
-        //Resets game
-        gameEnd = false;
-        loseScreen.SetActive(false);
     }
 }

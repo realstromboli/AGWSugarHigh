@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour
 
         //Pauses game
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         Time.timeScale = 0;
     }
 

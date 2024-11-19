@@ -36,6 +36,18 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Title");
     }
 
+    public void OpenBossScene()
+    {
+        //Change to boss sample level
+        SceneManager.LoadScene("SampleBoss");
+    }
+
+    public void OpenSandbox()
+    {
+        //Change to movement sandbox level
+        SceneManager.LoadScene("SampleScene");
+    }
+
     public void LevelSelect(int level)
     {
         //Change to selected level
