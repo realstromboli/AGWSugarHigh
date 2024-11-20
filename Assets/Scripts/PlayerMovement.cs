@@ -42,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Transform orientation;
     private AudioSource playerAudio;
+    private Animator playerAnimation;
 
     float horizontalInput;
     float verticalInput;
@@ -95,6 +96,7 @@ public class PlayerMovement : MonoBehaviour
         dashPowerActive = false;
         wrScript = GetComponent<WallRunning>();
         grappleScript = GetComponent<Grappling>();
+        playerAnimation = GetComponent<Animator>();
     }
 
     
@@ -120,6 +122,14 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             rb.drag = 0;
+        }
+
+        Vector3 lolVelocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        playerAnimation.SetFloat("move_speed", lolVelocity.magnitude);
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            playerAnimation.SetTrigger("test_trigger");
         }
     }
 
@@ -326,7 +336,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void SpeedControl()
+    public void SpeedControl()
     {
         if (activeGrapple)
         {
@@ -371,6 +381,8 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+
+        playerAnimation.SetTrigger("jump_trigger");
     }
 
     private void ResetJump()
@@ -479,36 +491,49 @@ public class PlayerMovement : MonoBehaviour
         if (collider.tag == "WallrunPickup")
         {
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
+            wallrunPowerActive = false;
             wallrunPowerActive = true;
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
+            StopCoroutine(WallrunPowerCooldown());
             StartCoroutine(WallrunPowerCooldown());
         }
         if (collider.tag == "GrapplePickup")
         {
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
+            grapplePowerActive = false;
             grapplePowerActive = true;
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
+            StopCoroutine(GrapplePowerCooldown());
             StartCoroutine(GrapplePowerCooldown());
         }
         if (collider.tag == "SwingPickup")
         {
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
+            swingPowerActive = false;
             swingPowerActive = true;
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
+            StopCoroutine(SwingPowerCooldown());
             StartCoroutine(SwingPowerCooldown());
         }
         if (collider.tag == "DashPickup")
         {
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
+            dashPowerActive = false;
             dashPowerActive = true;
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
+            StopCoroutine(DashPowerCooldown());
             StartCoroutine(DashPowerCooldown());
         }
     }
+
+    public Coroutine wallrunCoroutine;
+    public Coroutine grappleCoroutine;
+    public Coroutine swingCoroutine;
+    public Coroutine dashCoroutine;
 
     IEnumerator WallrunPowerCooldown()
     {
@@ -541,4 +566,5 @@ public class PlayerMovement : MonoBehaviour
         //powerupIndicator.gameObject.SetActive(false);
         dashScript.ResetDash();
     }
+
 }

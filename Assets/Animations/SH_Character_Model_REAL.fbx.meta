@@ -1,0 +1,2295 @@
+fileFormatVersion: 2
+guid: feb8a016fd487574394daa29c67b9c0c
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftUpperArm' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: SH_Character_Model_REAL(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Reference
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube2
+      parentName: Reference
+      position: {x: -0.00015240225, y: 0.117212296, z: -0.0011777851}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform3
+      parentName: pCube2
+      position: {x: 0.00015240225, y: -0.117212296, z: 0.0011777851}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: imagePlane5
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.16960382, y: 0.014661071, z: -0.5416837}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 0.20838739, y: 0.20838739, z: 0.20838739}
+    - name: imagePlane6
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0116657205, y: 0, z: -0.45657676}
+      rotation: {x: -0.5013379, y: 0.4986585, z: 0.4986585, w: 0.5013379}
+      scale: {x: 0.36669248, y: 0.30260897, z: 0.30260897}
+    - name: imagePlane7
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.16758707, y: 0.013020666, z: -0.4947894}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 0.4669037, y: 0.48133218, z: 0.48133218}
+    - name: pCube4
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.016400909, y: 0.007884225, z: 0.0037432858}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0622823, y: 0.41712287, z: 3.408717}
+    - name: transform4
+      parentName: pCube4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube5
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.0093881255, y: 0.007884225, z: 0.027477173}
+      rotation: {x: 6.238799e-17, y: 0.99981844, z: -6.238799e-17, w: 0.01905472}
+      scale: {x: 0.9868591, y: 0.38750666, z: 3.1666942}
+    - name: polySurface2
+      parentName: pCube5
+      position: {x: -0.006495598, y: -5.7300844e-18, z: 0.026052264}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0764276, y: 1.0764276, z: 1.0764276}
+    - name: transform2
+      parentName: polySurface2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform1
+      parentName: pCube5
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube2
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.00015240192, y: 0.08470539, z: 0.0032717176}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform5
+      parentName: pCube2
+      position: {x: 0.00015240192, y: -0.08470539, z: -0.0032717176}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube6
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.00015240192, y: 0.08470539, z: 0.0029467691}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform7
+      parentName: pCube6
+      position: {x: 0.00015240192, y: -0.08470539, z: -0.0029467691}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pCube2
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0, y: 0.044246502, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.6981897, y: 2.4679797, z: 1.6981897}
+    - name: Shopkeeper_Character009:transform2
+      parentName: Shopkeeper_Character009:pCube2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:group
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0, y: 0.0035744056, z: 0.00055858254}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube3
+      parentName: Shopkeeper_Character009:group
+      position: {x: -0.008218938, y: -0.0048195515, z: -0.0031745136}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.2522735, y: 0.2522735, z: 0.2522735}
+    - name: Shopkeeper_Character009:transform3
+      parentName: Shopkeeper_Character009:pasted__pCube3
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube4
+      parentName: Shopkeeper_Character009:group
+      position: {x: 0.008410034, y: -0.00255838, z: -0.0025865312}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -0.2522735, y: 0.2522735, z: 0.2522735}
+    - name: Shopkeeper_Character009:transform1
+      parentName: Shopkeeper_Character009:pasted__pCube4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pCube3
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0002232002, y: 0.033246722, z: -0.0017242092}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform4
+      parentName: Shopkeeper_Character009:pCube3
+      position: {x: 0.0002232002, y: -0.033246722, z: 0.0017242092}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pCube4
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.00022320032, y: 0.033246722, z: -0.0017242088}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform5
+      parentName: Shopkeeper_Character009:pCube4
+      position: {x: 0.00022320032, y: -0.033246722, z: 0.0017242088}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pCube5
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0, y: 0.03643798, z: -0.011114753}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.63043207, y: 0.63043207, z: 0.63043207}
+    - name: Shopkeeper_Character009:transform6
+      parentName: Shopkeeper_Character009:pCube5
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pCube6
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.00022320032, y: 0.086470924, z: -0.019003319}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.6536566, y: 1.6354368, z: 1.6354368}
+    - name: Shopkeeper_Character009:transform8
+      parentName: Shopkeeper_Character009:pCube6
+      position: {x: 0.00022320032, y: -0.033246722, z: 0.019003319}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:group1
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.008845871, y: 0.005458096, z: 0.016000504}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube7
+      parentName: Shopkeeper_Character009:group1
+      position: {x: -0.008064321, y: 0.00017687798, z: -0.0060052727}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.5193576, y: 0.49627507, z: 0.5193576}
+    - name: Shopkeeper_Character009:transform7
+      parentName: Shopkeeper_Character009:pasted__pCube7
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:group2
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.015051446, y: 0.005524136, z: 0.016016865}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__group1
+      parentName: Shopkeeper_Character009:group2
+      position: {x: -0.009162486, y: -0.00006604024, z: -0.000016360158}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:group3
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.016873661, y: 0.005524136, z: 0.01749241}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__group1
+      parentName: Shopkeeper_Character009:group3
+      position: {x: 0.00806432, y: -0.00006604024, z: -0.0014919054}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:group4
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.016910192, y: 0.0051280996, z: 0.017492408}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__group1
+      parentName: Shopkeeper_Character009:group4
+      position: {x: 0.00806432, y: 0.00032999663, z: -0.001491905}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:group5
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.017309047, y: 0.0051380927, z: 0.017492408}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__group1
+      parentName: Shopkeeper_Character009:group5
+      position: {x: 0.00806432, y: 0.0003200038, z: -0.001491905}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:group6
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.016379016, y: 0.0051380927, z: 0.016956806}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__group1
+      parentName: Shopkeeper_Character009:group6
+      position: {x: 0.00806432, y: 0.0003200038, z: -0.0009563029}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__pCube7
+      parentName: Shopkeeper_Character009:pasted__group1
+      position: {x: -0.008064321, y: 0.00017687798, z: -0.0060052727}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.5193576, y: 0.49627507, z: 0.5193576}
+    - name: Shopkeeper_Character009:transform10
+      parentName: Shopkeeper_Character009:pasted__pasted__pCube7
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pCube7
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.00022321017, y: 0.07057631, z: 0.0124434065}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform9
+      parentName: Shopkeeper_Character009:pCube7
+      position: {x: 0.00022321017, y: -0.07057631, z: -0.0124434065}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__pCube7
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.00022321104, y: 0.0705763, z: 0.0124434065}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform11
+      parentName: Shopkeeper_Character009:pasted__pasted__pCube7
+      position: {x: 0.00022321104, y: -0.0705763, z: -0.0124434065}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pCube8
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.000101652506, y: 0.14946166, z: 0.012728812}
+      rotation: {x: 0.029136708, y: -0, z: -0, w: 0.99957544}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform12
+      parentName: Shopkeeper_Character009:pCube8
+      position: {x: -0.000101652506, y: -0.1544189, z: -0.009223221}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pCube9
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.00018393039, y: 0.08253066, z: 0.013677322}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform15
+      parentName: Shopkeeper_Character009:pCube9
+      position: {x: -0.00018393039, y: -0.08253066, z: -0.013677322}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pCube10
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.018349295, y: 0.14545225, z: 0.012539609}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.2393448, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface1
+      parentName: Shopkeeper_Character009:pCube10
+      position: {x: 0.018349295, y: -0.14545225, z: -0.012539609}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform16
+      parentName: Shopkeeper_Character009:polySurface1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface2
+      parentName: Shopkeeper_Character009:pCube10
+      position: {x: 0.013475581, y: -0.14545225, z: -0.011784583}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform14
+      parentName: Shopkeeper_Character009:polySurface2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform13
+      parentName: Shopkeeper_Character009:pCube10
+      position: {x: 0.018349295, y: -0.14545225, z: -0.012539609}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pCube11
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.00018393039, y: 0.08125469, z: 0.012949712}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform17
+      parentName: Shopkeeper_Character009:pCube11
+      position: {x: -0.00018393039, y: -0.08125469, z: -0.012949712}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pCube12
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.00018393039, y: 0.08125469, z: 0.012949712}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform26
+      parentName: Shopkeeper_Character009:pCube12
+      position: {x: -0.00018393039, y: -0.08125469, z: -0.012949712}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pCube13
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.07911801, y: 0.12038594, z: 0.010993736}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.1122326, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform19
+      parentName: Shopkeeper_Character009:pCube13
+      position: {x: 0.07898443, y: -0.12038594, z: -0.010993736}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:group7
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.109206356, y: 0.12038594, z: 0.015999475}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube13
+      parentName: Shopkeeper_Character009:group7
+      position: {x: 0.0072627505, y: -0.0000000026874718, z: -0.003659177}
+      rotation: {x: 0, y: 0.034064963, z: -0, w: 0.9994196}
+      scale: {x: 0.9909338, y: 0.9377241, z: 0.9377241}
+    - name: Shopkeeper_Character009:transform22
+      parentName: Shopkeeper_Character009:pasted__pCube13
+      position: {x: 0.07898443, y: -0.12038594, z: -0.010993736}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:group8
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.11265482, y: 0.12038594, z: 0.015999475}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube13
+      parentName: Shopkeeper_Character009:group8
+      position: {x: 0.03338239, y: -0.0000000026874718, z: -0.00699683}
+      rotation: {x: 0, y: -0.068457685, z: -0, w: 0.997654}
+      scale: {x: 0.9977797, y: 0.8970963, z: 0.8970963}
+    - name: Shopkeeper_Character009:transform18
+      parentName: Shopkeeper_Character009:pasted__pCube13
+      position: {x: 0.07898443, y: -0.12038594, z: -0.010993736}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:group9
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.13932316, y: 0.12038594, z: 0.015999475}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__group8
+      parentName: Shopkeeper_Character009:group9
+      position: {x: -0, y: 0, z: 2.220446e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__pCube13
+      parentName: Shopkeeper_Character009:pasted__group8
+      position: {x: 0.059665106, y: -0.000000002687472, z: -0.008429312}
+      rotation: {x: 0, y: -0.17256314, z: -0, w: 0.98499846}
+      scale: {x: 0.7516847, y: 0.739385, z: 0.739385}
+    - name: Shopkeeper_Character009:transform21
+      parentName: Shopkeeper_Character009:pasted__pasted__pCube13
+      position: {x: 0.07898443, y: -0.12038594, z: -0.010993736}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pCube14
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.08465168, y: 0.12038594, z: 0.015999475}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform20
+      parentName: Shopkeeper_Character009:pCube14
+      position: {x: 0.08465168, y: -0.12038594, z: -0.015999475}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__pCube13
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.08465168, y: 0.12038594, z: 0.014665487}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform23
+      parentName: Shopkeeper_Character009:pasted__pasted__pCube13
+      position: {x: 0.08465168, y: -0.12038594, z: -0.014665487}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__pCube14
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.08465168, y: 0.12038594, z: 0.014706949}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface3
+      parentName: Shopkeeper_Character009:pasted__pasted__pCube14
+      position: {x: 0.09236449, y: -0.12342277, z: -0.014706949}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform25
+      parentName: Shopkeeper_Character009:polySurface3
+      position: {x: -0.007712816, y: 0.0030368299, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface4
+      parentName: Shopkeeper_Character009:pasted__pasted__pCube14
+      position: {x: 0.0762789, y: -0.12329701, z: -0.014706949}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform30
+      parentName: Shopkeeper_Character009:polySurface4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform24
+      parentName: Shopkeeper_Character009:pasted__pasted__pCube14
+      position: {x: 0.08465168, y: -0.12038594, z: -0.014706949}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pCube15
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.013099646, y: 0.08125469, z: 0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface5
+      parentName: Shopkeeper_Character009:pCube15
+      position: {x: 0.013099646, y: -0.08125469, z: -0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform29
+      parentName: Shopkeeper_Character009:polySurface5
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface6
+      parentName: Shopkeeper_Character009:pCube15
+      position: {x: 0.013099646, y: -0.08125469, z: -0.013986977}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform28
+      parentName: Shopkeeper_Character009:polySurface6
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform27
+      parentName: Shopkeeper_Character009:pCube15
+      position: {x: 0.013099646, y: -0.08125469, z: -0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface5
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.013099646, y: 0.08125469, z: 0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform31
+      parentName: Shopkeeper_Character009:polySurface5
+      position: {x: 0.013099646, y: -0.08125469, z: -0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface7
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.00032998025, y: 0.08125469, z: 0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface8
+      parentName: Shopkeeper_Character009:polySurface7
+      position: {x: 0.00032998025, y: -0.08125469, z: -0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform33
+      parentName: Shopkeeper_Character009:polySurface8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface9
+      parentName: Shopkeeper_Character009:polySurface7
+      position: {x: 0.00032998025, y: -0.08125469, z: -0.0137872}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform34
+      parentName: Shopkeeper_Character009:polySurface9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform32
+      parentName: Shopkeeper_Character009:polySurface7
+      position: {x: 0.00032998025, y: -0.08125469, z: -0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface9
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.00032998083, y: 0.08125469, z: 0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform36
+      parentName: Shopkeeper_Character009:polySurface9
+      position: {x: 0.00032998083, y: -0.08125469, z: -0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface10
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform38
+      parentName: Shopkeeper_Character009:polySurface10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:group10
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.00032998083, y: 0.079222016, z: 0.009138032}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube2
+      parentName: Shopkeeper_Character009:group10
+      position: {x: 0.00032998083, y: -0.034975514, z: -0.009138032}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.6981897, y: 2.4679797, z: 1.6981897}
+    - name: Shopkeeper_Character009:pasted__transform2
+      parentName: Shopkeeper_Character009:pasted__pCube2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__group
+      parentName: Shopkeeper_Character009:group10
+      position: {x: 0.00032998083, y: -0.07564761, z: -0.008579449}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__pCube3
+      parentName: Shopkeeper_Character009:pasted__group
+      position: {x: -0.008218938, y: -0.0048195515, z: -0.0031745136}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.2522735, y: 0.2522735, z: 0.2522735}
+    - name: Shopkeeper_Character009:pasted__transform3
+      parentName: Shopkeeper_Character009:pasted__pasted__pCube3
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__pCube4
+      parentName: Shopkeeper_Character009:pasted__group
+      position: {x: 0.008410034, y: -0.00255838, z: -0.0025865312}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: -0.2522735, y: 0.2522735, z: 0.2522735}
+    - name: Shopkeeper_Character009:pasted__transform1
+      parentName: Shopkeeper_Character009:pasted__pasted__pCube4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube3
+      parentName: Shopkeeper_Character009:group10
+      position: {x: 0.00010678064, y: -0.045975287, z: -0.010862241}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform4
+      parentName: Shopkeeper_Character009:pasted__pCube3
+      position: {x: 0.0002232002, y: -0.033246722, z: 0.0017242092}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube4
+      parentName: Shopkeeper_Character009:group10
+      position: {x: 0.00010678053, y: -0.045975287, z: -0.010862241}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform5
+      parentName: Shopkeeper_Character009:pasted__pCube4
+      position: {x: 0.00022320032, y: -0.033246722, z: 0.0017242088}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube5
+      parentName: Shopkeeper_Character009:group10
+      position: {x: 0.00032998083, y: -0.04278403, z: -0.020252785}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.63043207, y: 0.63043207, z: 0.63043207}
+    - name: Shopkeeper_Character009:pasted__transform6
+      parentName: Shopkeeper_Character009:pasted__pCube5
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube6
+      parentName: Shopkeeper_Character009:group10
+      position: {x: 0.00010678053, y: 0.0072489115, z: -0.02814135}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.6536566, y: 1.6354368, z: 1.6354368}
+    - name: Shopkeeper_Character009:pasted__transform8
+      parentName: Shopkeeper_Character009:pasted__pCube6
+      position: {x: 0.00022320032, y: -0.033246722, z: 0.019003319}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__group1
+      parentName: Shopkeeper_Character009:group10
+      position: {x: -0.00851589, y: -0.073763914, z: 0.0068624727}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__pCube7
+      parentName: Shopkeeper_Character009:pasted__group1
+      position: {x: -0.008064321, y: 0.00017687798, z: -0.0060052727}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.5193576, y: 0.49627507, z: 0.5193576}
+    - name: Shopkeeper_Character009:pasted__transform7
+      parentName: Shopkeeper_Character009:pasted__pasted__pCube7
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__group6
+      parentName: Shopkeeper_Character009:group10
+      position: {x: 0.016708998, y: -0.074083924, z: 0.007818775}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__group1
+      parentName: Shopkeeper_Character009:pasted__group6
+      position: {x: 0.00806432, y: 0.0003200038, z: -0.0009563029}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__pasted__pCube7
+      parentName: Shopkeeper_Character009:pasted__pasted__group1
+      position: {x: -0.008064321, y: 0.00017687798, z: -0.0060052727}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.5193576, y: 0.49627507, z: 0.5193576}
+    - name: Shopkeeper_Character009:pasted__transform10
+      parentName: Shopkeeper_Character009:pasted__pasted__pasted__pCube7
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube7
+      parentName: Shopkeeper_Character009:group10
+      position: {x: 0.000106770676, y: -0.008645707, z: 0.0033053749}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform9
+      parentName: Shopkeeper_Character009:pasted__pCube7
+      position: {x: 0.00022321017, y: -0.07057631, z: -0.0124434065}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__pasted__pCube7
+      parentName: Shopkeeper_Character009:group10
+      position: {x: 0.000106769796, y: -0.008645711, z: 0.0033053749}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform11
+      parentName: Shopkeeper_Character009:pasted__pasted__pasted__pCube7
+      position: {x: 0.00022321104, y: -0.0705763, z: -0.0124434065}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube8
+      parentName: Shopkeeper_Character009:group10
+      position: {x: 0.00043163335, y: 0.07023964, z: 0.0035907803}
+      rotation: {x: 0.029136708, y: -0, z: -0, w: 0.99957544}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform12
+      parentName: Shopkeeper_Character009:pasted__pCube8
+      position: {x: -0.000101652506, y: -0.1544189, z: -0.009223221}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube9
+      parentName: Shopkeeper_Character009:group10
+      position: {x: 0.00051391125, y: 0.0033086473, z: 0.004539292}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform15
+      parentName: Shopkeeper_Character009:pasted__pCube9
+      position: {x: -0.00018393039, y: -0.08253066, z: -0.013677322}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube10
+      parentName: Shopkeeper_Character009:group10
+      position: {x: -0.018019315, y: 0.06623024, z: 0.0034015784}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.2393448, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__polySurface1
+      parentName: Shopkeeper_Character009:pasted__pCube10
+      position: {x: 0.018349295, y: -0.14545225, z: -0.012539609}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform16
+      parentName: Shopkeeper_Character009:pasted__polySurface1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__polySurface2
+      parentName: Shopkeeper_Character009:pasted__pCube10
+      position: {x: 0.013475581, y: -0.14545225, z: -0.011784583}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform14
+      parentName: Shopkeeper_Character009:pasted__polySurface2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform13
+      parentName: Shopkeeper_Character009:pasted__pCube10
+      position: {x: 0.018349295, y: -0.14545225, z: -0.012539609}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube11
+      parentName: Shopkeeper_Character009:group10
+      position: {x: 0.00051391125, y: 0.002032681, z: 0.0038116805}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform17
+      parentName: Shopkeeper_Character009:pasted__pCube11
+      position: {x: -0.00018393039, y: -0.08125469, z: -0.012949712}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube12
+      parentName: Shopkeeper_Character009:group10
+      position: {x: 0.00051391125, y: 0.002032681, z: 0.0038116805}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform26
+      parentName: Shopkeeper_Character009:pasted__pCube12
+      position: {x: -0.00018393039, y: -0.08125469, z: -0.012949712}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube13
+      parentName: Shopkeeper_Character009:group10
+      position: {x: -0.078788035, y: 0.041163925, z: 0.0018557035}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.1122326, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform19
+      parentName: Shopkeeper_Character009:pasted__pCube13
+      position: {x: 0.07898443, y: -0.12038594, z: -0.010993736}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__group7
+      parentName: Shopkeeper_Character009:group10
+      position: {x: -0.10887638, y: 0.041163925, z: 0.0068614446}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__pCube13
+      parentName: Shopkeeper_Character009:pasted__group7
+      position: {x: 0.0072627505, y: -0.0000000026874718, z: -0.003659177}
+      rotation: {x: 0, y: 0.034064963, z: -0, w: 0.9994196}
+      scale: {x: 0.9909338, y: 0.9377241, z: 0.9377241}
+    - name: Shopkeeper_Character009:pasted__transform22
+      parentName: Shopkeeper_Character009:pasted__pasted__pCube13
+      position: {x: 0.07898443, y: -0.12038594, z: -0.010993736}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__group8
+      parentName: Shopkeeper_Character009:group10
+      position: {x: -0.112324834, y: 0.041163925, z: 0.0068614446}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__pCube13
+      parentName: Shopkeeper_Character009:pasted__group8
+      position: {x: 0.03338239, y: -0.0000000026874718, z: -0.00699683}
+      rotation: {x: 0, y: -0.068457685, z: -0, w: 0.997654}
+      scale: {x: 0.9977797, y: 0.8970963, z: 0.8970963}
+    - name: Shopkeeper_Character009:pasted__transform18
+      parentName: Shopkeeper_Character009:pasted__pasted__pCube13
+      position: {x: 0.07898443, y: -0.12038594, z: -0.010993736}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__group9
+      parentName: Shopkeeper_Character009:group10
+      position: {x: -0.13899319, y: 0.041163925, z: 0.0068614446}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__group8
+      parentName: Shopkeeper_Character009:pasted__group9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__pasted__pCube13
+      parentName: Shopkeeper_Character009:pasted__pasted__group8
+      position: {x: 0.059665106, y: -0.000000002687472, z: -0.008429312}
+      rotation: {x: 0, y: -0.17256314, z: -0, w: 0.98499846}
+      scale: {x: 0.7516847, y: 0.739385, z: 0.739385}
+    - name: Shopkeeper_Character009:pasted__transform21
+      parentName: Shopkeeper_Character009:pasted__pasted__pasted__pCube13
+      position: {x: 0.07898443, y: -0.12038594, z: -0.010993736}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube14
+      parentName: Shopkeeper_Character009:group10
+      position: {x: -0.0843217, y: 0.041163925, z: 0.0068614446}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform20
+      parentName: Shopkeeper_Character009:pasted__pCube14
+      position: {x: 0.08465168, y: -0.12038594, z: -0.015999475}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__pasted__pCube13
+      parentName: Shopkeeper_Character009:group10
+      position: {x: -0.084321685, y: 0.041163925, z: 0.005527456}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform23
+      parentName: Shopkeeper_Character009:pasted__pasted__pasted__pCube13
+      position: {x: 0.08465168, y: -0.12038594, z: -0.014665487}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pasted__pasted__pCube14
+      parentName: Shopkeeper_Character009:group10
+      position: {x: -0.084321685, y: 0.041163925, z: 0.0055689174}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__polySurface3
+      parentName: Shopkeeper_Character009:pasted__pasted__pasted__pCube14
+      position: {x: 0.09236449, y: -0.12342277, z: -0.014706949}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform25
+      parentName: Shopkeeper_Character009:pasted__polySurface3
+      position: {x: -0.007712816, y: 0.0030368299, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__polySurface4
+      parentName: Shopkeeper_Character009:pasted__pasted__pasted__pCube14
+      position: {x: 0.0762789, y: -0.12329701, z: -0.014706949}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform30
+      parentName: Shopkeeper_Character009:pasted__polySurface4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform24
+      parentName: Shopkeeper_Character009:pasted__pasted__pasted__pCube14
+      position: {x: 0.08465168, y: -0.12038594, z: -0.014706949}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__pCube15
+      parentName: Shopkeeper_Character009:group10
+      position: {x: -0.012769666, y: 0.002032681, z: 0.0036362438}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__polySurface5
+      parentName: Shopkeeper_Character009:pasted__pCube15
+      position: {x: 0.013099646, y: -0.08125469, z: -0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform29
+      parentName: Shopkeeper_Character009:pasted__polySurface5
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__polySurface6
+      parentName: Shopkeeper_Character009:pasted__pCube15
+      position: {x: 0.013099646, y: -0.08125469, z: -0.013986977}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform28
+      parentName: Shopkeeper_Character009:pasted__polySurface6
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform27
+      parentName: Shopkeeper_Character009:pasted__pCube15
+      position: {x: 0.013099646, y: -0.08125469, z: -0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__polySurface5
+      parentName: Shopkeeper_Character009:group10
+      position: {x: -0.012769666, y: 0.002032681, z: 0.0036362438}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform31
+      parentName: Shopkeeper_Character009:pasted__polySurface5
+      position: {x: 0.013099646, y: -0.08125469, z: -0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__polySurface7
+      parentName: Shopkeeper_Character009:group10
+      position: {x: 6.131694e-10, y: 0.002032681, z: 0.0036362438}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__polySurface8
+      parentName: Shopkeeper_Character009:pasted__polySurface7
+      position: {x: 0.00032998025, y: -0.08125469, z: -0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform33
+      parentName: Shopkeeper_Character009:pasted__polySurface8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__polySurface9
+      parentName: Shopkeeper_Character009:pasted__polySurface7
+      position: {x: 0.00032998025, y: -0.08125469, z: -0.0137872}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform34
+      parentName: Shopkeeper_Character009:pasted__polySurface9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__transform32
+      parentName: Shopkeeper_Character009:pasted__polySurface7
+      position: {x: 0.00032998025, y: -0.08125469, z: -0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:pasted__polySurface9
+      parentName: Shopkeeper_Character009:group10
+      position: {x: -0.1993789, y: 0.002032681, z: 0.036376193}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0112565, y: 1.0112565, z: 1.0112565}
+    - name: Shopkeeper_Character009:transform35
+      parentName: Shopkeeper_Character009:pasted__polySurface9
+      position: {x: 0.00032998083, y: -0.08125469, z: -0.012774276}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface11
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.00032998083, y: 0.08125469, z: 0.012336824}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform37
+      parentName: Shopkeeper_Character009:polySurface11
+      position: {x: 0.00032998083, y: -0.08125469, z: -0.012336824}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface12
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.00032998083, y: 0.08125469, z: 0.01160202}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface15
+      parentName: Shopkeeper_Character009:polySurface12
+      position: {x: -0.06994649, y: 0.06284216, z: 0.05499323}
+      rotation: {x: 0.65238917, y: 0.7498602, z: -0.07172276, w: 0.08339002}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface3
+      parentName: Shopkeeper_Character009:polySurface15
+      position: {x: -0.016576473, y: 0.17589761, z: -0.03317245}
+      rotation: {x: 0, y: -0.08028627, z: -0, w: 0.9967719}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface4
+      parentName: Shopkeeper_Character009:polySurface15
+      position: {x: -0.0001815246, y: 0.0000010306429, z: -0.00081014074}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform18
+      parentName: polySurface4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform17
+      parentName: Shopkeeper_Character009:polySurface15
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:transform39
+      parentName: Shopkeeper_Character009:polySurface12
+      position: {x: 0.00032998083, y: -0.08125469, z: -0.01160202}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shopkeeper_Character009:polySurface17
+      parentName: Shopkeeper_Character009:polySurface12
+      position: {x: 0.07313454, y: 0.028740807, z: -0.01633049}
+      rotation: {x: -0.23101169, y: 0.10783603, z: 0.59387463, w: 0.7630976}
+      scale: {x: 0.8707957, y: 0.8707957, z: 0.8707957}
+    - name: transform6
+      parentName: Shopkeeper_Character009:polySurface17
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pTorus1
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.040994905, y: 0.08915941, z: 0.0031742924}
+      rotation: {x: -0.1933352, y: -0.0049258145, z: -0.034805745, w: 0.98050284}
+      scale: {x: 0.639424, y: 0.639424, z: 0.639424}
+    - name: transform20
+      parentName: pTorus1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube8
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0038215008, y: 0.08470539, z: 0.0041344278}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform16
+      parentName: pCube8
+      position: {x: 0.0038215008, y: -0.08470539, z: -0.0041344278}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube9
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0037882917, y: 0.08470539, z: 0.0041344278}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.05038, y: 1.05038, z: 1.05038}
+    - name: transform13
+      parentName: pCube9
+      position: {x: 0.0038215008, y: -0.08470539, z: -0.0041344278}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube10
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.014214151, y: 0.018744865, z: 0.00223873}
+      rotation: {x: 0.28095764, y: -0.12626445, z: -0.037316687, w: 0.9506459}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform65
+      parentName: pCube10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube11
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.014214151, y: 0.016912527, z: 0.006101196}
+      rotation: {x: 0.28072673, y: -0.13201362, z: -0.039015826, w: 0.94986457}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform61
+      parentName: pCube11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube12
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.014214151, y: 0.014969461, z: 0.009807152}
+      rotation: {x: 0.28185233, y: -0.100884825, z: -0.029815897, w: 0.9536732}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform68
+      parentName: pCube12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube13
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.014214151, y: 0.013362376, z: 0.013594493}
+      rotation: {x: 0.28110033, y: -0.12257494, z: -0.036226284, w: 0.95112866}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform64
+      parentName: pCube13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube14
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.014214151, y: 0.014046243, z: 0.011775863}
+      rotation: {x: 0.27808413, y: 0.18529403, z: 0.05476253, w: 0.94092315}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform60
+      parentName: pCube14
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube15
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.014377046, y: 0.015509652, z: 0.008248876}
+      rotation: {x: 0.27808413, y: 0.18529403, z: 0.05476253, w: 0.94092315}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform67
+      parentName: pCube15
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube16
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.01435582, y: 0.017733075, z: 0.004612697}
+      rotation: {x: 0.27808413, y: 0.18529403, z: 0.05476253, w: 0.94092315}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform66
+      parentName: pCube16
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube17
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.01435582, y: 0.019228762, z: 0.00045492832}
+      rotation: {x: 0.27673134, y: 0.20718798, z: 0.061233155, w: 0.9363458}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform59
+      parentName: pCube17
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube18
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.01400386, y: 0.018808598, z: 0.0023083382}
+      rotation: {x: 0.1944905, y: 0.6975713, z: 0.20616296, w: 0.65807647}
+      scale: {x: 0.4027868, y: 0.18952289, z: 0.18952289}
+    - name: transform69
+      parentName: pCube18
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube19
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.020206716, y: 0.018318068, z: 0.00096037914}
+      rotation: {x: 0.16190153, y: 0.6853212, z: 0.1652284, w: 0.6905232}
+      scale: {x: 0.4027868, y: 0.18952289, z: 0.18952289}
+    - name: transform62
+      parentName: pCube19
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube20
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.019278789, y: 0.014046243, z: 0.011775863}
+      rotation: {x: 0.27808413, y: 0.18529403, z: 0.05476253, w: 0.94092315}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform58
+      parentName: pCube20
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube21
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.019278789, y: 0.013362376, z: 0.013594493}
+      rotation: {x: 0.28110033, y: -0.12257494, z: -0.036226284, w: 0.95112866}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform49
+      parentName: pCube21
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube22
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.013286225, y: 0.018318068, z: 0.00096037914}
+      rotation: {x: 0.16190153, y: 0.6853212, z: 0.1652284, w: 0.6905232}
+      scale: {x: 0.4027868, y: 0.18952289, z: 0.18952289}
+    - name: transform56
+      parentName: pCube22
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube23
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.019115891, y: 0.015509652, z: 0.008248876}
+      rotation: {x: 0.27808413, y: 0.18529403, z: 0.05476253, w: 0.94092315}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform50
+      parentName: pCube23
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube24
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.019278789, y: 0.014969461, z: 0.009807152}
+      rotation: {x: 0.28185233, y: -0.100884825, z: -0.029815897, w: 0.9536732}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform52
+      parentName: pCube24
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube25
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.019137118, y: 0.017733075, z: 0.004612697}
+      rotation: {x: 0.27808413, y: 0.18529403, z: 0.05476253, w: 0.94092315}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform54
+      parentName: pCube25
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube26
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.019278789, y: 0.016912527, z: 0.006101196}
+      rotation: {x: 0.28072673, y: -0.13201362, z: -0.039015826, w: 0.94986457}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform51
+      parentName: pCube26
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube27
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.019137118, y: 0.019228762, z: 0.00045492832}
+      rotation: {x: 0.27673134, y: 0.20718798, z: 0.061233155, w: 0.9363458}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform53
+      parentName: pCube27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube28
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.019278789, y: 0.018744865, z: 0.00223873}
+      rotation: {x: 0.28095764, y: -0.12626445, z: -0.037316687, w: 0.9506459}
+      scale: {x: 0.18952289, y: 0.18952289, z: 0.18952289}
+    - name: transform55
+      parentName: pCube28
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube29
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.01948908, y: 0.018808598, z: 0.0023083382}
+      rotation: {x: 0.1944905, y: 0.6975713, z: 0.20616296, w: 0.65807647}
+      scale: {x: 0.4027868, y: 0.18952289, z: 0.18952289}
+    - name: transform57
+      parentName: pCube29
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube30
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.014003043, y: 0.018830394, z: -0.012615964}
+      rotation: {x: -0.43110985, y: 0.031654146, z: 0.01566645, w: 0.901608}
+      scale: {x: 0.15991949, y: 0.18952289, z: 0.18952289}
+    - name: transform63
+      parentName: pCube30
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube31
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.019405607, y: 0.018830394, z: -0.012615964}
+      rotation: {x: -0.43110985, y: 0.031654146, z: 0.01566645, w: 0.901608}
+      scale: {x: 0.15991949, y: 0.18952289, z: 0.18952289}
+    - name: transform72
+      parentName: pCube31
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube32
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0038661414, y: 0.08470539, z: 0.0041344278}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.1186031, y: 1.0115112, z: 1.0682626}
+    - name: transform15
+      parentName: pCube32
+      position: {x: 0.0038215008, y: -0.08470539, z: -0.0041344278}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube34
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.012063845, y: 0.1012793, z: 0.010136155}
+      rotation: {x: 0.05872264, y: -0, z: -0, w: 0.9982743}
+      scale: {x: 0.346907, y: 0.3398571, z: 0.10172966}
+    - name: transform10
+      parentName: pCube34
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube35
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.009669367, y: 0.109606504, z: 0.018265288}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.37663925, y: 0.458271, z: 0.4272921}
+    - name: transform12
+      parentName: pCube35
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube39
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.010510279, y: 0.109606504, z: 0.018265288}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.37663925, y: 0.458271, z: 0.4272921}
+    - name: transform14
+      parentName: pCube39
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube40
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.010967629, y: 0.1012793, z: 0.010469569}
+      rotation: {x: 0.053952716, y: -0.39410734, z: -0.02318303, w: 0.9171865}
+      scale: {x: 0.30765036, y: 0.30139825, z: 0.09021775}
+    - name: transform11
+      parentName: pCube40
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube41
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.009926807, y: 0.10780697, z: -0.01078974}
+      rotation: {x: 0.056283016, y: -0.2847511, z: -0.01675024, w: 0.9568012}
+      scale: {x: 0.346907, y: 0.3398571, z: 0.10172966}
+    - name: transform9
+      parentName: pCube41
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube42
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.009758465, y: 0.10748472, z: -0.010615523}
+      rotation: {x: 0.081636295, y: 0.21328238, z: 0.0072232457, w: 0.9735471}
+      scale: {x: 0.346907, y: 0.3398571, z: 0.10172966}
+    - name: transform8
+      parentName: pCube42
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube43
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0020295547, y: 0.08470539, z: 0.002203119}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform19
+      parentName: pCube43
+      position: {x: 0.0020295547, y: -0.08470539, z: -0.002203119}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube44
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.000090507456, y: 0.08470539, z: 0.0028785237}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform21
+      parentName: pCube44
+      position: {x: 0.000090507456, y: -0.08470539, z: -0.0028785237}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube45
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0030534652, y: 0.08430052, z: 0.0022031188}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform23
+      parentName: pCube45
+      position: {x: 0.0030534652, y: -0.08430052, z: -0.0022031188}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pSphere1
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0, y: 0.17882621, z: 0.0046708127}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.677246, y: 1.677246, z: 1.677246}
+    - name: transform22
+      parentName: pSphere1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube47
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0029230928, y: 0.100630455, z: 0.0022031188}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface5
+      parentName: pCube47
+      position: {x: 0.0029230928, y: -0.100630455, z: -0.0022031188}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform26
+      parentName: polySurface5
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface6
+      parentName: pCube47
+      position: {x: 0.0029230928, y: -0.100630455, z: -0.0022031188}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform40
+      parentName: polySurface6
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface7
+      parentName: pCube47
+      position: {x: 0.0029230928, y: -0.100630455, z: -0.0022031188}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform39
+      parentName: polySurface7
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface8
+      parentName: pCube47
+      position: {x: 0.0029230928, y: -0.100630455, z: -0.0022031188}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform33
+      parentName: polySurface8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface9
+      parentName: pCube47
+      position: {x: 0.0029230928, y: -0.100630455, z: -0.0022031188}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform42
+      parentName: polySurface9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface10
+      parentName: pCube47
+      position: {x: 0.0029230928, y: -0.100630455, z: -0.0022031188}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform37
+      parentName: polySurface10
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface11
+      parentName: pCube47
+      position: {x: 0.0029230928, y: -0.100630455, z: -0.0022031188}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform38
+      parentName: polySurface11
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface12
+      parentName: pCube47
+      position: {x: 0.0029230928, y: -0.100630455, z: -0.0022031188}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform35
+      parentName: polySurface12
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface13
+      parentName: pCube47
+      position: {x: 0.0029230928, y: -0.100630455, z: -0.0022031188}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform34
+      parentName: polySurface13
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface14
+      parentName: pCube47
+      position: {x: 0.0029230928, y: -0.100630455, z: -0.0022031188}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform36
+      parentName: polySurface14
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface15
+      parentName: pCube47
+      position: {x: 0.0029230928, y: -0.095616, z: -0.039861478}
+      rotation: {x: 0.109945916, y: -0, z: -0, w: 0.99393755}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform25
+      parentName: polySurface15
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform24
+      parentName: pCube47
+      position: {x: 0.0029230928, y: -0.100630455, z: -0.0022031188}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface5
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0010946632, y: 0.10209572, z: 0.0045826994}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform41
+      parentName: polySurface5
+      position: {x: 0.0010946632, y: -0.10209572, z: -0.0045826994}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube48
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.007904947, y: 0.17868444, z: 0.022312071}
+      rotation: {x: 0, y: 0.08539524, z: -0, w: 0.9963472}
+      scale: {x: 1, y: 1, z: 0.1561436}
+    - name: transform27
+      parentName: pCube48
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube49
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.007817477, y: 0.17868336, z: 0.022564812}
+      rotation: {x: 0, y: -0.06842594, z: -0, w: 0.9976562}
+      scale: {x: 1, y: 1, z: 0.1561436}
+    - name: transform28
+      parentName: pCube49
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube50
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.000043810316, y: 0.1786839, z: 0.021811018}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform30
+      parentName: pCube50
+      position: {x: -0.000043810316, y: -0.1786839, z: -0.022356391}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube51
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.013094016, y: 0.18027145, z: 0.021322703}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.11328697, y: 0.10506527, z: 0.106551506}
+    - name: transform29
+      parentName: pCube51
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube52
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.013802124, y: 0.18030554, z: 0.02124039}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.11328697, y: 0.10506527, z: 0.106551506}
+    - name: transform31
+      parentName: pCube52
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube53
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.000161919, y: 0.18131042, z: 0.01694015}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform32
+      parentName: pCube53
+      position: {x: -0.000161919, y: -0.18131042, z: -0.01694015}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube54
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.000161919, y: 0.17951062, z: 0.016898993}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform44
+      parentName: pCube54
+      position: {x: -0.000161919, y: -0.1813104, z: -0.016898993}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface16
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0029230928, y: 0.100448824, z: 0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform43
+      parentName: polySurface16
+      position: {x: 0.0029230928, y: -0.100448824, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface17
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0029230928, y: 0.100448824, z: 0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform45
+      parentName: polySurface17
+      position: {x: 0.0029230928, y: -0.100448824, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface18
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0029230928, y: 0.100448824, z: 0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform47
+      parentName: polySurface18
+      position: {x: 0.0029230928, y: -0.100448824, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pTorus2
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.006069445, y: 0.19287896, z: 0}
+      rotation: {x: -0.22248887, y: 0.044990443, z: -0.19302887, w: 0.95457554}
+      scale: {x: 0.60963446, y: 0.28547668, z: 0.60316104}
+    - name: transform46
+      parentName: pTorus2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface19
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0029230928, y: 0.108999066, z: 0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform48
+      parentName: polySurface19
+      position: {x: 0.0029230928, y: -0.108999066, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube55
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0029230928, y: 0.10730196, z: 0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform70
+      parentName: pCube55
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube56
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0029230928, y: 0.10730196, z: 0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform71
+      parentName: pCube56
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pCube57
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0029230928, y: 0.10730196, z: 0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface20
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform74
+      parentName: polySurface20
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface21
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform96
+      parentName: polySurface21
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface22
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform89
+      parentName: polySurface22
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface23
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform94
+      parentName: polySurface23
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface24
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform93
+      parentName: polySurface24
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface25
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform88
+      parentName: polySurface25
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface26
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform92
+      parentName: polySurface26
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface27
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform90
+      parentName: polySurface27
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface28
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform95
+      parentName: polySurface28
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface29
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform91
+      parentName: polySurface29
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface30
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform97
+      parentName: polySurface30
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface31
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform86
+      parentName: polySurface31
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface32
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform85
+      parentName: polySurface32
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface33
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform83
+      parentName: polySurface33
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface34
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform82
+      parentName: polySurface34
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface35
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform81
+      parentName: polySurface35
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface36
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform76
+      parentName: polySurface36
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface37
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform80
+      parentName: polySurface37
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface38
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform79
+      parentName: polySurface38
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface39
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform110
+      parentName: polySurface39
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface40
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform84
+      parentName: polySurface40
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface41
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform78
+      parentName: polySurface41
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface42
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform77
+      parentName: polySurface42
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface43
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform101
+      parentName: polySurface43
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface44
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform104
+      parentName: polySurface44
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface45
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform103
+      parentName: polySurface45
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface46
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform100
+      parentName: polySurface46
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface47
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform106
+      parentName: polySurface47
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface48
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform102
+      parentName: polySurface48
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface49
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform75
+      parentName: polySurface49
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface50
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform105
+      parentName: polySurface50
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface51
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform99
+      parentName: polySurface51
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface52
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform107
+      parentName: polySurface52
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface53
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform108
+      parentName: polySurface53
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform73
+      parentName: pCube57
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.002870332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface31
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0029230928, y: 0.10730196, z: 0.0034270012}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform87
+      parentName: polySurface31
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.0034270012}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface30
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0029230928, y: 0.10730196, z: 0.0034270012}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform98
+      parentName: polySurface30
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.0034270012}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface53
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.0029230928, y: 0.10730196, z: 0.0034270012}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: transform109
+      parentName: polySurface53
+      position: {x: 0.0029230928, y: -0.10730196, z: -0.0034270012}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface39
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0, y: 0.5, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 10, y: 10, z: 10}
+    - name: pPlane1
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.04962166, y: -0.40711078, z: 0.048371006}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 6.4101706, y: 1, z: 6.4101706}
+    - name: left
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 1000.1, y: 0.22831455, z: -0.08909836}
+      rotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_IK_Handle
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.18595764, y: -0.32671672, z: -0.06881477}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Ankle_Controller
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.18595764, y: -0.32671672, z: -0.06881477}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_IK_Handle
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.13769573, y: -0.326717, z: -0.113960996}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Ankle_Controller
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.13769573, y: -0.326717, z: -0.113960996}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ROOT_Controller
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.015411944, y: 0.60020953, z: -0.0030823383}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Lower_Back_Controller
+      parentName: ROOT_Controller
+      position: {x: -0.003922322, y: 0.06519222, z: 0.0000075644252}
+      rotation: {x: -0.012979683, y: -0.00013968063, z: -0.010759954, w: 0.9998579}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Upper_Back_Controller
+      parentName: Lower_Back_Controller
+      position: {x: 0.0052313292, y: 0.2220761, z: -0.0725395}
+      rotation: {x: 0, y: 1.0842022e-19, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Neck_Controller
+      parentName: Upper_Back_Controller
+      position: {x: 0.0052870833, y: 0.17433524, z: 0.041702013}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Inner_Shoulder_Controller
+      parentName: Upper_Back_Controller
+      position: {x: 0.07493237, y: 0.065508805, z: 0.029271029}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Shoulder_Controller
+      parentName: R_Inner_Shoulder_Controller
+      position: {x: 0.12115838, y: -8.100187e-15, z: -0.03269884}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Elbow_Controller
+      parentName: R_Shoulder_Controller
+      position: {x: 0.16560444, y: -0.29847375, z: -0.0063158795}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Wrist_Controller
+      parentName: R_Elbow_Controller
+      position: {x: 0.05141693, y: -0.26917887, z: 0.10004661}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Inner_Shoulder_Controller
+      parentName: Upper_Back_Controller
+      position: {x: -0.06435815, y: 0.06550911, z: 0.029270982}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Shoulder_Controller
+      parentName: L_Inner_Shoulder_Controller
+      position: {x: -0.12115881, y: -8.952838e-15, z: -0.032698803}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Elbow_Controller
+      parentName: L_Shoulder_Controller
+      position: {x: -0.15142754, y: -0.29847395, z: -0.0063158986}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Wrist_Controller
+      parentName: L_Elbow_Controller
+      position: {x: -0.06997875, y: -0.269179, z: 0.10946764}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Knee_Controller
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: 0.1690734, y: 0.17808959, z: 0.70046085}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.04344766, y: 0.04344766, z: 0.048508115}
+    - name: L_Knee_Controller
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.120009914, y: 0.17808999, z: 0.7143342}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.04344766, y: 0.04344766, z: 0.046793826}
+    - name: ROOT
+      parentName: SH_Character_Model_REAL(Clone)
+      position: {x: -0.009120028, y: 1.0343089, z: -0.0030823383}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Hip
+      parentName: ROOT
+      position: {x: 0.11266363, y: -0.100908734, z: -0.034078605}
+      rotation: {x: 0.037096366, y: 0.51520175, z: 0.04908014, w: 0.85485804}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Knee
+      parentName: R_Hip
+      position: {x: -0.03447177, y: -0.32121116, z: 0.027648022}
+      rotation: {x: 0.0000011641531, y: 0.27627838, z: -0.00000009499489, w: 0.9610777}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: R_Ankle
+      parentName: R_Knee
+      position: {x: -0.020279355, y: -0.50480634, z: 0.010187777}
+      rotation: {x: 0.059842575, y: 0.77030677, z: -0.0142769255, w: 0.63469887}
+      scale: {x: 1.0000004, y: 1, z: 1.0000005}
+    - name: L_Hip
+      parentName: ROOT
+      position: {x: -0.09442357, y: -0.100908525, z: -0.03407856}
+      rotation: {x: 0.5630664, y: -0.024733298, z: 0.8248328, w: -0.04466978}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: L_Knee
+      parentName: L_Hip
+      position: {x: 0.034472194, y: 0.321211, z: -0.027648244}
+      rotation: {x: -0.0000003017485, y: 0.27627897, z: -0.000000070780516, w: 0.9610775}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: L_Ankle
+      parentName: L_Knee
+      position: {x: 0.032931343, y: 0.504807, z: -0.053532295}
+      rotation: {x: 0.040583942, y: 0.43636376, z: -0.03098495, w: 0.8983204}
+      scale: {x: 0.99999994, y: 0.99999976, z: 0.9999998}
+    - name: jLower_Spine
+      parentName: ROOT
+      position: {x: -0.003922322, y: 0.06519222, z: 0.0000075642406}
+      rotation: {x: -0.0000000020371234, y: -0.2979971, z: -0.0000000012457314, w: 0.9545668}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Upper_Spine
+      parentName: jLower_Spine
+      position: {x: -0.036966685, y: 0.22207616, z: -0.062632345}
+      rotation: {x: 1.6576696e-10, y: 0.37222034, z: -2.409195e-10, w: 0.9281444}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Neck
+      parentName: Upper_Spine
+      position: {x: -0.0013240628, y: 0.17433524, z: 0.04201497}
+      rotation: {x: 0.000000001478085, y: -0.18984683, z: 0.0000000016618695, w: 0.9818137}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Head
+      parentName: Neck
+      position: {x: 0.008952122, y: 0.13779706, z: 0.044825315}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1}
+    - name: R_Inner_Shoulder
+      parentName: Neck
+      position: {x: 0.06513298, y: -0.10882649, z: -0.027616821}
+      rotation: {x: -0.0000000021829056, y: 0.890867, z: -5.833911e-11, w: -0.45426422}
+      scale: {x: 1, y: 0.9999999, z: 1.0000001}
+    - name: R_Shoulder
+      parentName: R_Inner_Shoulder
+      position: {x: -0.11272091, y: 1.4210854e-16, z: -0.05515945}
+      rotation: {x: -0.1767369, y: -0.7746817, z: -0.4597512, w: 0.3965617}
+      scale: {x: 1.0000006, y: 0.99999994, z: 1.0000005}
+    - name: R_Elbow
+      parentName: R_Shoulder
+      position: {x: -0.013240229, y: -0.2984737, z: 0.1651951}
+      rotation: {x: -0.127336, y: -0.16165426, z: 0.15922356, w: 0.9655575}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: R_Wrist
+      parentName: R_Elbow
+      position: {x: -0.07378447, y: -0.2691789, z: 0.08490511}
+      rotation: {x: -0, y: -0, z: -2.6020852e-17, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+    - name: R_Inner_Shoulder1
+      parentName: Neck
+      position: {x: -0.07066525, y: -0.108826146, z: 0.00337814}
+      rotation: {x: -0.24463826, y: 0.0000000019347068, z: 0.9696145, w: -9.761125e-10}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: R_Shoulder1
+      parentName: R_Inner_Shoulder1
+      position: {x: 0.11272119, y: 1.4210854e-16, z: 0.055159748}
+      rotation: {x: -0.000000003704348, y: -0.8846278, z: 0.000000002519189, w: 0.46629775}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: R_Elbow1
+      parentName: R_Shoulder1
+      position: {x: 0.011569834, y: 0.298474, z: -0.15111694}
+      rotation: {x: -0.0000000016920263, y: -0.24678926, z: -0.0000000047175237, w: 0.96906924}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: R_Wrist1
+      parentName: R_Elbow1
+      position: {x: 0.07563536, y: 0.269179, z: -0.10563845}
+      rotation: {x: -0, y: -0, z: 5.5511145e-17, w: 1}
+      scale: {x: 0.99999964, y: 0.9999997, z: 0.99999976}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

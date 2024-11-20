@@ -10,6 +10,11 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         //Change to game scene
+        SceneManager.LoadScene("Lore");
+    }
+
+    public void Level1()
+    {
         SceneManager.LoadScene("Level 1");
     }
 
