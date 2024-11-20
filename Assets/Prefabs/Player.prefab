@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba181b8937c99074d8f9843f75964100, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDeath: -10
+  minDeath: -5
   gameEnd: 0
   winScreen: {fileID: 0}
   loseScreen: {fileID: 0}

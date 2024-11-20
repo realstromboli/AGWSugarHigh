@@ -16,7 +16,8 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftUpperArm' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -24,14 +25,43 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: jump
+      takeName: Take 001
+      internalID: 1827226128182048838
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -82,7 +112,112 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: SH_Jump_Anim_Alpha(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:polySurface39
+      parentName: SH_Jump_Anim_Alpha(Clone)
+      position: {x: -0, y: 0.5, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 10, y: 10, z: 10}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:ROOT
+      parentName: SH_Jump_Anim_Alpha(Clone)
+      position: {x: -0.009120028, y: 1.0343089, z: -0.0030823383}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Hip
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:ROOT
+      position: {x: 0.11266363, y: -0.100908734, z: -0.034078605}
+      rotation: {x: 0.037096366, y: 0.51520175, z: 0.04908014, w: 0.85485804}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Knee
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Hip
+      position: {x: -0.03447177, y: -0.32121116, z: 0.027648022}
+      rotation: {x: 0.0000011641531, y: 0.27627838, z: -0.00000009499489, w: 0.9610777}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Ankle
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Knee
+      position: {x: -0.020279355, y: -0.50480634, z: 0.010187777}
+      rotation: {x: 0.059842575, y: 0.77030677, z: -0.0142769255, w: 0.63469887}
+      scale: {x: 1.0000004, y: 0.99999994, z: 1.0000005}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:L_Hip
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:ROOT
+      position: {x: -0.09442357, y: -0.100908525, z: -0.03407856}
+      rotation: {x: 0.5630664, y: -0.024733298, z: 0.8248328, w: -0.04466978}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:L_Knee
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:L_Hip
+      position: {x: 0.034472194, y: 0.321211, z: -0.027648244}
+      rotation: {x: -0.0000003017485, y: 0.27627897, z: -0.000000070780516, w: 0.9610775}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:L_Ankle
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:L_Knee
+      position: {x: 0.032931343, y: 0.504807, z: -0.053532295}
+      rotation: {x: 0.040583942, y: 0.43636376, z: -0.03098495, w: 0.8983204}
+      scale: {x: 1, y: 0.99999976, z: 0.9999999}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:jLower_Spine
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:ROOT
+      position: {x: -0.003922322, y: 0.06519222, z: 0.0000075642406}
+      rotation: {x: -0.0000000020371234, y: -0.2979971, z: -0.0000000012457314, w: 0.9545668}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:Upper_Spine
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:jLower_Spine
+      position: {x: -0.036966685, y: 0.22207616, z: -0.062632345}
+      rotation: {x: 1.6576696e-10, y: 0.37222034, z: -2.409195e-10, w: 0.9281444}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:Neck
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:Upper_Spine
+      position: {x: -0.0013240628, y: 0.17433524, z: 0.04201497}
+      rotation: {x: 0.0000000016868563, y: -0.18984681, z: 0.0000000019986677, w: 0.9818137}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:Head
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:Neck
+      position: {x: 0.008952122, y: 0.13779706, z: 0.044825315}
+      rotation: {x: -0, y: -0, z: 2.7755576e-17, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.99999994}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Inner_Shoulder
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:Neck
+      position: {x: 0.06513298, y: -0.10882649, z: -0.027616821}
+      rotation: {x: -0.0000000012146107, y: 0.890867, z: -2.9615585e-10, w: -0.45426416}
+      scale: {x: 1.0000007, y: 0.9999999, z: 1.0000007}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Shoulder
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Inner_Shoulder
+      position: {x: -0.11272091, y: 1.4210854e-16, z: -0.05515945}
+      rotation: {x: -0.17673703, y: -0.77468187, z: -0.45975095, w: 0.3965617}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Elbow
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Shoulder
+      position: {x: -0.013240229, y: -0.2984737, z: 0.1651951}
+      rotation: {x: -0.12733619, y: -0.16165428, z: 0.15922348, w: 0.9655576}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Wrist
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Elbow
+      position: {x: -0.07378447, y: -0.2691789, z: 0.08490511}
+      rotation: {x: -0.0000000071341404, y: 0.000000029802326, z: 0.000000023283057, w: 1}
+      scale: {x: 0.9999998, y: 1.0000004, z: 1}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Inner_Shoulder1
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:Neck
+      position: {x: -0.07066525, y: -0.108826146, z: 0.00337814}
+      rotation: {x: -0.24463828, y: 0.0000000022666495, z: 0.9696145, w: -7.597042e-10}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Shoulder1
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Inner_Shoulder1
+      position: {x: 0.11272119, y: 1.4210854e-16, z: 0.055159748}
+      rotation: {x: -0.0000000034643002, y: -0.8846278, z: 0.0000000029745932, w: 0.46629772}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Elbow1
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Shoulder1
+      position: {x: 0.011569834, y: 0.298474, z: -0.15111694}
+      rotation: {x: -9.609373e-11, y: -0.24678917, z: -0.0000000040570014, w: 0.9690692}
+      scale: {x: 0.99999994, y: 1, z: 0.99999964}
+    - name: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Wrist1
+      parentName: SH_Character_Jump_First_Pass:SH_Character_Rig_Base:R_Elbow1
+      position: {x: 0.07563536, y: 0.269179, z: -0.10563845}
+      rotation: {x: -0, y: -0, z: -8.673616e-17, w: 1}
+      scale: {x: 0.9999997, y: 0.9999997, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -93,13 +228,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0

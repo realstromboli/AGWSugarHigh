@@ -10,6 +10,7 @@ TagManager:
   - KillZone
   - SwingPickup
   - DashPickup
+  - BossWeakSpot
   layers:
   - Default
   - TransparentFX

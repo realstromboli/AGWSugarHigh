@@ -313,7 +313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level 5
+  m_text: Sandbox
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -1274,7 +1274,7 @@ GameObject:
   - component: {fileID: 549954695}
   - component: {fileID: 549954694}
   m_Layer: 5
-  m_Name: Level 5
+  m_Name: Sandbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1347,8 +1347,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 703227110}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: LevelSelect
-        m_Mode: 3
+        m_MethodName: OpenSandbox
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2201,7 +2201,7 @@ GameObject:
   - component: {fileID: 994697441}
   - component: {fileID: 994697440}
   m_Layer: 5
-  m_Name: Level 4
+  m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2274,8 +2274,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 703227110}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: LevelSelect
-        m_Mode: 3
+        m_MethodName: OpenBossScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2748,7 +2748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1697227164
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2827,7 +2827,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level 4
+  m_text: Boss
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -3203,7 +3203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2069688189
 RectTransform:
   m_ObjectHideFlags: 0

@@ -7,10 +7,12 @@ public class BossController : MonoBehaviour
     public GameObject player;
     private bool isDefeated = false;
 
-    [Header("Boss Movement")]
+    [Header("Boss Stats")]
     public float turnRate = 1;
     private Vector3 toTarget;
     private Quaternion playerPos;
+
+    public int health = 3;
 
     [Header("Boss Attack")]
     public float attackRate;
@@ -18,13 +20,23 @@ public class BossController : MonoBehaviour
     public float tillAttack;
     private bool isAggro = false;
     public GameObject angryEyes;
-    public GameObject projectile;
 
+    [Header("Melee")]
+    public MeleeAttack melee;
+    public float verticalLaunchForce;
+    public float meleeLaunchForce;
+
+    [Header("Projectile")]
+    public GameObject projectile;
+    public float projectileSpeed;
+    public float AOEsize;
+    public float projectileLaunchForce;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
+        melee = GameObject.Find("Melee Range").GetComponent<MeleeAttack>();
 
         InvokeRepeating("aggro", attackRate, attackRate);
     }
@@ -34,10 +46,13 @@ public class BossController : MonoBehaviour
     {
         if (!isDefeated)
         {
-            //Boss continuously looks at the player. With dampening to feel more natural
-            toTarget = player.transform.position - transform.position;
-            playerPos = Quaternion.LookRotation(toTarget);
-            transform.rotation = Quaternion.Slerp(transform.rotation, playerPos, Time.deltaTime / turnRate);
+            if (player.transform.position.y < 10)
+            {
+                //Boss continuously looks at the player. With dampening to feel more natural
+                toTarget = player.transform.position - transform.position;
+                playerPos = Quaternion.LookRotation(toTarget);
+                transform.rotation = Quaternion.Slerp(transform.rotation, playerPos, Time.deltaTime / turnRate);
+            }
         }
         else
         {
@@ -46,6 +61,11 @@ public class BossController : MonoBehaviour
             //Temp Dead Position
             transform.rotation = new Quaternion(0.4f, 0.6f, 0.5f, 0.4f);
             transform.position = new Vector3(0, 1.9f, 0);
+        }
+
+        if (health == 0)
+        {
+            isDefeated = true;
         }
 
         //Temp kill switch
@@ -71,7 +91,16 @@ public class BossController : MonoBehaviour
     {
         yield return new WaitForSeconds(tillAttack);
 
-        Instantiate(projectile, transform.position, transform.rotation);
+        if (melee.inRange)
+        {
+            melee.meleeAttack();
+            Debug.Log("Melee Attack");
+        }
+        else
+        {
+            Instantiate(projectile, transform.position, transform.rotation);
+            Debug.Log("Range Attack");
+        }
 
     }
 
@@ -83,5 +112,4 @@ public class BossController : MonoBehaviour
         isAggro = false;
 
     }
-
 }
