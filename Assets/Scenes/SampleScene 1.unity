@@ -1628,7 +1628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: feb8a016fd487574394daa29c67b9c0c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5866666021909216657, guid: feb8a016fd487574394daa29c67b9c0c, type: 3}
@@ -2762,6 +2762,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 532074380}
     - target: {fileID: 2761278844072249180, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
+      propertyPath: dashForce
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761278844072249180, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: playerCam
       value: 
       objectReference: {fileID: 806212021}
@@ -2783,7 +2787,7 @@ PrefabInstance:
       objectReference: {fileID: 676739852}
     - target: {fileID: 6667755807305137841, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6835013311803071418, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: m_LocalPosition.x

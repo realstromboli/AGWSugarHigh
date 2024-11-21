@@ -865,6 +865,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8421802834845275674, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
   m_PrefabInstance: {fileID: 1916323781}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &638033514
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638033513}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!120 &768730758 stripped
 LineRenderer:
   m_CorrespondingSourceObject: {fileID: 6448959966173769103, guid: ce5c4ee0bc860ff439dea1df7fa6832a, type: 3}
@@ -1715,6 +1736,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 329242168}
     - target: {fileID: 2761278844072249180, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
+      propertyPath: dashForce
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761278844072249180, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: playerCam
       value: 
       objectReference: {fileID: 329242165}
@@ -1801,7 +1826,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8421802834845275674, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 638033514}
   m_SourcePrefab: {fileID: 100100000, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
