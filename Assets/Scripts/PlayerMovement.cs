@@ -130,7 +130,15 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             playerAnimation.SetTrigger("test_trigger");
+            //PlayAnimation();
         }
+    }
+
+    public void PlayAnimation()
+    {
+
+        playerAnimation.Play("test anim");
+
     }
 
     private void FixedUpdate()
