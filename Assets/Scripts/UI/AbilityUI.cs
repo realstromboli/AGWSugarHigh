@@ -6,68 +6,87 @@ using UnityEngine.UI;
 
 public class AbilityUI : MonoBehaviour
 {
+    public List<GameObject> abilities;
+    
     private PlayerMovement player;
-    private Timer timer;
 
-    //Text Visuals
-    public TextMeshProUGUI abilityText;
-    public TextMeshProUGUI abilityDuration;
+    public GameObject wallRunScreen;
+    public GameObject grappleScreen;
+    public GameObject swingScreen;
+    public GameObject dashScreen;
 
-    /*public Image bg1;
-    public Image bg2;
-
-    public Color defaultColor;
-    public Color wallRunColor;
-    public Color grappleColor;
-    public Color swingColor;*/
+    // -15, -85, -155, -225
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerMovement>();
-        abilityText = GameObject.Find("Ability").GetComponent<TextMeshProUGUI>();
-        abilityDuration = GameObject.Find("Ability Duration").GetComponent<TextMeshProUGUI>();
-
-        timer = GameObject.Find("UI").GetComponent<Timer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (player.wallrunPowerActive == true)
+        if (player.wallrunPowerActive)
         {
-            if(!timer.timerOn)
+            if (wallRunScreen.activeInHierarchy == false)
             {
-                abilityText.text = "Ability: Wall Run";
-                timer.timerOn = true;
-                timer.enabled = true;
-                timer.time = player.powerupDuration;
+                wallRunScreen.SetActive(true);
+                
+                wallRunScreen.transform.localPosition = new Vector3(-75, -15 + 70 * abilities.Count, 0);
+                abilities.Add(wallRunScreen);
             }
         }
-        else if (player.grapplePowerActive == true)
+        
+        if (player.grapplePowerActive)
         {
-            if (!timer.timerOn)
+            if (grappleScreen.activeInHierarchy == false)
             {
-                abilityText.text = "Ability: Grapple";
-                timer.timerOn = true;
-                timer.enabled = true;
-                timer.time = player.powerupDuration;
+                grappleScreen.SetActive(true);
+
+                grappleScreen.transform.localPosition = new Vector3(-75, -15 + 70 * abilities.Count, 0);
+                abilities.Add(grappleScreen);
             }
         }
-        else if (player.swingPowerActive == true)
+
+        if (player.swingPowerActive) 
         {
-            if (!timer.timerOn)
+            if (swingScreen.activeInHierarchy == false)
             {
-                abilityText.text = "Ability: Swing";
-                timer.timerOn = true;
-                timer.enabled = true;
-                timer.time = player.powerupDuration;
+                swingScreen.SetActive(true);
+
+                swingScreen.transform.localPosition = new Vector3(-75, -15 + 70 * abilities.Count, 0);
+                abilities.Add(swingScreen);
             }
         }
-        else
+
+        if (player.dashPowerActive)
         {
-            abilityText.text = "Ability: None";
-            abilityDuration.text = "";
+            if (dashScreen.activeInHierarchy == false)
+            {
+                dashScreen.SetActive(true);
+
+                dashScreen.transform.localPosition = new Vector3(-75, -15 + 70 * abilities.Count, 0);
+                abilities.Add(dashScreen);
+            }
+        }
+    }
+
+    public void removefromList(string power)
+    {
+        switch (power)
+        {
+            case "wallRun":
+                abilities.Remove(wallRunScreen);
+                break;
+            case "grapple":
+                abilities.Remove(grappleScreen);
+                break;
+            case "swing":
+                abilities.Remove(swingScreen);
+                break;
+            case "dash":
+                abilities.Remove(dashScreen);
+                break;
         }
     }
 }
