@@ -69,6 +69,11 @@ public class PlayerMovement : MonoBehaviour
     public Swinging swingScript;
     public Dashing dashScript;
 
+    public Ability wallRunUI;
+    public Ability grappleUI;
+    public Ability swingUI;
+    public Ability dashUI;
+
     public enum MovementState
     {
         freeze,
@@ -501,6 +506,7 @@ public class PlayerMovement : MonoBehaviour
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
             wallrunPowerActive = false;
             wallrunPowerActive = true;
+            wallRunUI.ResetTimer();
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
             StopCoroutine(WallrunPowerCooldown());
@@ -511,6 +517,7 @@ public class PlayerMovement : MonoBehaviour
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
             grapplePowerActive = false;
             grapplePowerActive = true;
+            grappleUI.ResetTimer();
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
             StopCoroutine(GrapplePowerCooldown());
@@ -521,6 +528,7 @@ public class PlayerMovement : MonoBehaviour
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
             swingPowerActive = false;
             swingPowerActive = true;
+            swingUI.ResetTimer();
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
             StopCoroutine(SwingPowerCooldown());
@@ -531,6 +539,7 @@ public class PlayerMovement : MonoBehaviour
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
             dashPowerActive = false;
             dashPowerActive = true;
+            dashUI.ResetTimer();
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
             StopCoroutine(DashPowerCooldown());
