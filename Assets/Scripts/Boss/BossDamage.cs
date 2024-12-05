@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class BossDamage : MonoBehaviour
 {
     private BossController boss;
+    public Win_Lose win_lose;
 
     private GameObject player;
     private Rigidbody playerRB;
@@ -15,6 +17,12 @@ public class BossDamage : MonoBehaviour
 
     private bool canDamage = true;
 
+    public Image health1;
+    public Image health2;
+    public Image health3;
+
+    public Sprite unwrapped;
+
     public BossController golemScript;
 
     // Start is called before the first frame update
@@ -24,6 +32,7 @@ public class BossDamage : MonoBehaviour
 
         player = GameObject.Find("Player");
         playerRB = GameObject.Find("Player").GetComponent<Rigidbody>();
+        win_lose = GameObject.Find("Player").GetComponent<Win_Lose>();
         
     }
 
@@ -42,7 +51,21 @@ public class BossDamage : MonoBehaviour
 
             Debug.Log("Boss Health: " + boss.health);
 
+            if (boss.health == 2)
+            {
+                health3.sprite = unwrapped;
+            }
+            if (boss.health == 1)
+            {
+                health2.sprite = unwrapped;
+            }
+            if (boss.health == 0)
+            {
+                health1.sprite = unwrapped;
             golemScript.golemAnimation.SetTrigger("hurt_trigger");
+
+                win_lose.callWin();
+            }
 
             if (boss.health > 0)
             {
@@ -54,7 +77,7 @@ public class BossDamage : MonoBehaviour
                 Vector3 direction = heading / distance;
                 playerRB.velocity = new Vector3(playerRB.velocity.x, 0f, playerRB.velocity.z);
                 playerRB.AddForce((-direction + new Vector3(0, 0, 0)) * launchforce, ForceMode.Impulse);
-                Debug.Log("Buffer:" + direction);
+                //Debug.Log("Buffer:" + direction);
             }
         }
     }
@@ -64,6 +87,6 @@ public class BossDamage : MonoBehaviour
         yield return new WaitForSeconds(bufferTime);
 
         canDamage = true;
-        Debug.Log("Damge again");
+        //Debug.Log("Damage again");
     }
 }
