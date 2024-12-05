@@ -211,7 +211,7 @@ public class WallRunning : MonoBehaviour
         pmScript.wallrunning = false;
 
         // reset camera effects
-        cam.DoFov(80f);
+        cam.DoFov(0f);
         cam.DoTilt(0f);
     }
 
