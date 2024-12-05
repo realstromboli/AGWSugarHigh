@@ -30,6 +30,14 @@ public class Swinging : MonoBehaviour
     [Header("Input")]
     public KeyCode swingKey = KeyCode.Mouse0;
 
+    public ParticleSystem swingFailParticles;
+
+
+    public void Start()
+    {
+        cam = GameObject.Find("Main Camera").transform;
+        predictionPoint = GameObject.Find("Prediction Point").transform;
+    }
 
     public void Update()
     {
@@ -98,7 +106,11 @@ public class Swinging : MonoBehaviour
     private void StartSwing()
     {
         // return if predictionHit not found
-        if (predictionHit.point == Vector3.zero) return;
+        if (predictionHit.point == Vector3.zero)
+        {
+            swingFailParticles.Play();
+            return;
+        }  
 
         // deactivate active grapple
         if (GetComponent<Grappling>() != null)

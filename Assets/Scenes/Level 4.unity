@@ -355,6 +355,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &412714787 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5712988701623757059, guid: ce5c4ee0bc860ff439dea1df7fa6832a, type: 3}
+  m_PrefabInstance: {fileID: 845212391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &504910773
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +918,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2906765059565871659, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
   m_PrefabInstance: {fileID: 1879249612}
+  m_PrefabAsset: {fileID: 0}
+--- !u!120 &806341663 stripped
+LineRenderer:
+  m_CorrespondingSourceObject: {fileID: 7190759790710554537, guid: ce5c4ee0bc860ff439dea1df7fa6832a, type: 3}
+  m_PrefabInstance: {fileID: 845212391}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &817113049
 GameObject:
@@ -8199,6 +8209,18 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1134654259}
+    - target: {fileID: 2761278844072249180, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 845212394}
+    - target: {fileID: 3892083343736028040, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
+      propertyPath: lr
+      value: 
+      objectReference: {fileID: 806341663}
+    - target: {fileID: 3892083343736028040, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
+      propertyPath: gunTip
+      value: 
+      objectReference: {fileID: 412714787}
     - target: {fileID: 6835013311803071418, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
