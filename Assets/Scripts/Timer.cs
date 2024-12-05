@@ -59,7 +59,7 @@ public class Timer : MonoBehaviour
         }
         else
         {
-            timeText.text = seconds + " seconds";
+            timeText.text = seconds + " sec";
         }
     }
 }

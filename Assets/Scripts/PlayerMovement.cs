@@ -504,6 +504,10 @@ public class PlayerMovement : MonoBehaviour
         if (collider.tag == "WallrunPickup")
         {
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
+            if (wallrunPowerActive)
+            {
+                wallRunUI.ResetTimer();
+            }
             wallrunPowerActive = false;
             wallrunPowerActive = true;
             //Destroy(collider.gameObject);
@@ -513,6 +517,10 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collider.tag == "GrapplePickup")
         {
+            if (grapplePowerActive)
+            {
+                grappleUI.ResetTimer();
+            }
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
             grapplePowerActive = false;
             grapplePowerActive = true;
@@ -523,6 +531,10 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collider.tag == "SwingPickup")
         {
+            if (swingPowerActive)
+            {
+                swingUI.ResetTimer();
+            }
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
             swingPowerActive = false;
             swingPowerActive = true;
@@ -533,6 +545,10 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collider.tag == "DashPickup")
         {
+            if (dashPowerActive)
+            {
+                dashUI.ResetTimer();
+            }
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
             dashPowerActive = false;
             dashPowerActive = true;
