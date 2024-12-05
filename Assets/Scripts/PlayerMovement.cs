@@ -506,40 +506,40 @@ public class PlayerMovement : MonoBehaviour
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
             wallrunPowerActive = false;
             wallrunPowerActive = true;
-            wallRunUI.ResetTimer();
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
             StopCoroutine(WallrunPowerCooldown());
+            StartCoroutine(WallrunPowerCooldown());
         }
         if (collider.tag == "GrapplePickup")
         {
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
             grapplePowerActive = false;
             grapplePowerActive = true;
-            grappleUI.ResetTimer();
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
             StopCoroutine(GrapplePowerCooldown());
+            StartCoroutine(GrapplePowerCooldown());
         }
         if (collider.tag == "SwingPickup")
         {
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
             swingPowerActive = false;
             swingPowerActive = true;
-            swingUI.ResetTimer();
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
             StopCoroutine(SwingPowerCooldown());
+            StartCoroutine(SwingPowerCooldown());
         }
         if (collider.tag == "DashPickup")
         {
             //playerAudio.PlayOneShot(pickupSound, 1.0f);
             dashPowerActive = false;
             dashPowerActive = true;
-            dashUI.ResetTimer();
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
             StopCoroutine(DashPowerCooldown());
+            StartCoroutine(DashPowerCooldown());
         }
     }
 
@@ -554,6 +554,7 @@ public class PlayerMovement : MonoBehaviour
         wallrunPowerActive = false;
         //powerupIndicator.gameObject.SetActive(false);
         wrScript.StopWallRun();
+        StartCoroutine(StopPower1());
     }
 
     IEnumerator GrapplePowerCooldown()
@@ -562,6 +563,7 @@ public class PlayerMovement : MonoBehaviour
         grapplePowerActive = false;
         //powerupIndicator.gameObject.SetActive(false);
         grappleScript.StopGrapple();
+        StartCoroutine(StopPower2());
     }
 
     IEnumerator SwingPowerCooldown()
@@ -570,6 +572,7 @@ public class PlayerMovement : MonoBehaviour
         swingPowerActive = false;
         //powerupIndicator.gameObject.SetActive(false);
         swingScript.StopSwing();
+        StartCoroutine(StopPower3());
     }
 
     IEnumerator DashPowerCooldown()
@@ -578,6 +581,34 @@ public class PlayerMovement : MonoBehaviour
         dashPowerActive = false;
         //powerupIndicator.gameObject.SetActive(false);
         dashScript.ResetDash();
+        StartCoroutine(StopPower4());
     }
 
+    IEnumerator StopPower1()
+    {
+        yield return new WaitForSeconds(1);
+        wallrunPowerActive = false;
+        StopCoroutine(WallrunPowerCooldown());
+    }
+
+    IEnumerator StopPower2()
+    {
+        yield return new WaitForSeconds(1);
+        grapplePowerActive = false;
+        StopCoroutine(GrapplePowerCooldown());
+    }
+
+    IEnumerator StopPower3()
+    {
+        yield return new WaitForSeconds(1);
+        swingPowerActive = false;
+        StopCoroutine(SwingPowerCooldown());
+    }
+
+    IEnumerator StopPower4()
+    {
+        yield return new WaitForSeconds(1);
+        dashPowerActive = false;
+        StopCoroutine(DashPowerCooldown());
+    }
 }
