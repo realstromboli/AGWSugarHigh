@@ -1011,7 +1011,7 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 0
-        scalar: 50
+        scalar: 30
         minScalar: 30
         maxCurve:
           serializedVersion: 2
@@ -5148,7 +5148,7 @@ MonoBehaviour:
   dashSpeedChangeFactor: 2
   maxYSpeed: 25
   groundDrag: 5
-  jumpForce: 18
+  jumpForce: 15
   jumpCooldown: 0.25
   airMultiplier: 0.5
   jumpKey: 32
@@ -5228,7 +5228,7 @@ MonoBehaviour:
   gunTip: {fileID: 0}
   whatIsGrappleable:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 8
   lineRenderer: {fileID: 0}
   maxGrappleDistance: 40
   grappleDelayTime: 0.25
@@ -5280,6 +5280,7 @@ MonoBehaviour:
   predictionSphereCastRadius: 3
   predictionPoint: {fileID: 0}
   swingKey: 323
+  swingFailParticles: {fileID: 1465947006184066364}
 --- !u!114 &2761278844072249180
 MonoBehaviour:
   m_ObjectHideFlags: 0
