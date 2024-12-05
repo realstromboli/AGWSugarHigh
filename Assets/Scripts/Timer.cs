@@ -53,6 +53,13 @@ public class Timer : MonoBehaviour
 
     void updateTimer(float currentTime)
     {
-        timeText.text = "Time: " + string.Format("{0:0}:{1:00}", minutes, seconds);
+        if (worldTimer)
+        {
+           timeText.text = "Time: " + string.Format("{0:0}:{1:00}", minutes, seconds);
+        }
+        else
+        {
+            timeText.text = seconds + " seconds";
+        }
     }
 }
