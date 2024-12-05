@@ -86,6 +86,7 @@ public class Grappling : MonoBehaviour
 
         lineRenderer.enabled = true;
         lineRenderer.SetPosition(1, grapplePoint);
+        pmScript.playerAnimation.SetTrigger("grapple_trigger");
     }
 
     private void ExecuteGrapple()

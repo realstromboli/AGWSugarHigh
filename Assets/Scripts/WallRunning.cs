@@ -155,16 +155,21 @@ public class WallRunning : MonoBehaviour
 
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
+
         // camera effects
         cam.DoFov(90f);
         if (wallLeft)
         {
             cam.DoTilt(-5f);
+            pmScript.playerAnimation.SetBool("LR Bool", true);
         }
         if (wallRight)
         {
             cam.DoTilt(5f);
+            pmScript.playerAnimation.SetBool("LR Bool", false);
         }
+
+        pmScript.playerAnimation.SetTrigger("wallrun_start");
     }
 
     private void WallRunningMovement()
@@ -213,6 +218,7 @@ public class WallRunning : MonoBehaviour
         // reset camera effects
         cam.DoFov(60f);
         cam.DoTilt(0f);
+        pmScript.playerAnimation.SetTrigger("wallrun_stop");
     }
 
     private void WallJump()

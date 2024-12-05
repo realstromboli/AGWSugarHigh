@@ -79,7 +79,7 @@ public class Win_Lose : MonoBehaviour
         }
     }
 
-    private void callWin()
+    public void callWin()
     {
         //Marks game as ended
         gameEnd = true;

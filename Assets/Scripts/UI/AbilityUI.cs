@@ -32,12 +32,12 @@ public class AbilityUI : MonoBehaviour
             {
                 wallRunScreen.SetActive(true);
                 
-                wallRunScreen.transform.localPosition = new Vector3(-75, -320 + 70 * abilities.Count, 0);
+                wallRunScreen.transform.localPosition = new Vector3(-75, -270 + 70 * abilities.Count, 0);
                 abilities.Add(wallRunScreen);
             }
             else
             {
-                wallRunScreen.transform.localPosition = new Vector3(-75, -320 + 70 * abilities.IndexOf(wallRunScreen), 0);
+                wallRunScreen.transform.localPosition = new Vector3(-75, -270 + 70 * abilities.IndexOf(wallRunScreen), 0);
             }
         }
         
@@ -47,12 +47,12 @@ public class AbilityUI : MonoBehaviour
             {
                 grappleScreen.SetActive(true);
 
-                grappleScreen.transform.localPosition = new Vector3(-75, -320 + 70 * abilities.Count, 0);
+                grappleScreen.transform.localPosition = new Vector3(-75, -270 + 70 * abilities.Count, 0);
                 abilities.Add(grappleScreen);
             }
             else
             {
-                grappleScreen.transform.localPosition = new Vector3(-75, -320 + 70 * abilities.IndexOf(grappleScreen) , 0);
+                grappleScreen.transform.localPosition = new Vector3(-75, -270 + 70 * abilities.IndexOf(grappleScreen) , 0);
             }
         }
 
@@ -62,12 +62,12 @@ public class AbilityUI : MonoBehaviour
             {
                 swingScreen.SetActive(true);
 
-                swingScreen.transform.localPosition = new Vector3(-75, -320 + 70 * abilities.Count, 0);
+                swingScreen.transform.localPosition = new Vector3(-75, -270 + 70 * abilities.Count, 0);
                 abilities.Add(swingScreen);
             }
             else
             {
-                swingScreen.transform.localPosition = new Vector3(-75, -320 + 70 * abilities.IndexOf(swingScreen), 0);
+                swingScreen.transform.localPosition = new Vector3(-75, -270 + 70 * abilities.IndexOf(swingScreen), 0);
             }
         }
 
@@ -77,12 +77,12 @@ public class AbilityUI : MonoBehaviour
             {
                 dashScreen.SetActive(true);
 
-                dashScreen.transform.localPosition = new Vector3(-75, -320 + 70 * abilities.Count, 0);
+                dashScreen.transform.localPosition = new Vector3(-75, -270 + 70 * abilities.Count, 0);
                 abilities.Add(dashScreen);
             }
             else
             {
-                dashScreen.transform.localPosition = new Vector3(-75, -320 + 70 * abilities.IndexOf(dashScreen), 0);
+                dashScreen.transform.localPosition = new Vector3(-75, -270 + 70 * abilities.IndexOf(dashScreen), 0);
             }
         }
     }

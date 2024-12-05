@@ -124,6 +124,8 @@ public class Swinging : MonoBehaviour
         joint.autoConfigureConnectedAnchor = false;
         joint.connectedAnchor = swingPoint;
 
+        pmScript.playerAnimation.SetTrigger("swing_trigger");
+
         float distanceFromPoint = Vector3.Distance(player.position, swingPoint);
 
         // the distance grapple will try to keep from grapple point. 
