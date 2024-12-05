@@ -22924,6 +22924,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1438889710329877704, guid: 5fea18463d175d24ab231e5c15e1cba1, type: 3}
+      propertyPath: gradeTimes.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -1438889710329877704, guid: 5fea18463d175d24ab231e5c15e1cba1, type: 3}
+      propertyPath: gradeTimes.Array.data[0]
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -1438889710329877704, guid: 5fea18463d175d24ab231e5c15e1cba1, type: 3}
+      propertyPath: gradeTimes.Array.data[1]
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: -1438889710329877704, guid: 5fea18463d175d24ab231e5c15e1cba1, type: 3}
+      propertyPath: gradeTimes.Array.data[2]
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 5295774286736137966, guid: 5fea18463d175d24ab231e5c15e1cba1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
