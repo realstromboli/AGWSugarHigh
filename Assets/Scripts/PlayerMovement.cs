@@ -510,7 +510,6 @@ public class PlayerMovement : MonoBehaviour
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
             StopCoroutine(WallrunPowerCooldown());
-            StartCoroutine(WallrunPowerCooldown());
         }
         if (collider.tag == "GrapplePickup")
         {
@@ -521,7 +520,6 @@ public class PlayerMovement : MonoBehaviour
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
             StopCoroutine(GrapplePowerCooldown());
-            StartCoroutine(GrapplePowerCooldown());
         }
         if (collider.tag == "SwingPickup")
         {
@@ -532,7 +530,6 @@ public class PlayerMovement : MonoBehaviour
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
             StopCoroutine(SwingPowerCooldown());
-            StartCoroutine(SwingPowerCooldown());
         }
         if (collider.tag == "DashPickup")
         {
@@ -543,7 +540,6 @@ public class PlayerMovement : MonoBehaviour
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
             StopCoroutine(DashPowerCooldown());
-            StartCoroutine(DashPowerCooldown());
         }
     }
 
