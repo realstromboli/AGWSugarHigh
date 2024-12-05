@@ -322,6 +322,7 @@ MonoBehaviour:
   sensitivityY: 400
   orientation: {fileID: 0}
   camHolder: {fileID: 3048041112437042065}
+  playerObj: {fileID: 0}
 --- !u!1 &3210192390833037078
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraPosition: {fileID: 0}
+  offset: {x: 0, y: 0.5, z: 0}
 --- !u!1 &6662210990940081595
 GameObject:
   m_ObjectHideFlags: 0

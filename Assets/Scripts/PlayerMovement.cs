@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Transform orientation;
     private AudioSource playerAudio;
-    private Animator playerAnimation;
+    public Animator playerAnimation;
 
     float horizontalInput;
     float verticalInput;
@@ -132,11 +132,13 @@ public class PlayerMovement : MonoBehaviour
         Vector3 lolVelocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
         playerAnimation.SetFloat("move_speed", lolVelocity.magnitude);
 
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            playerAnimation.SetTrigger("test_trigger");
-            //PlayAnimation();
-        }
+        //if (Input.GetKeyDown(KeyCode.Q))
+        //{
+        //    playerAnimation.SetTrigger("test_trigger");
+        //    //PlayAnimation();
+        //}
+
+
     }
 
     public void PlayAnimation()
@@ -512,6 +514,7 @@ public class PlayerMovement : MonoBehaviour
             wallrunPowerActive = true;
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
+            playerAnimation.SetTrigger("pickup_trigger");
             StopCoroutine(WallrunPowerCooldown());
             StartCoroutine(WallrunPowerCooldown());
         }
@@ -526,6 +529,7 @@ public class PlayerMovement : MonoBehaviour
             grapplePowerActive = true;
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
+            playerAnimation.SetTrigger("pickup_trigger");
             StopCoroutine(GrapplePowerCooldown());
             StartCoroutine(GrapplePowerCooldown());
         }
@@ -540,6 +544,7 @@ public class PlayerMovement : MonoBehaviour
             swingPowerActive = true;
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
+            playerAnimation.SetTrigger("pickup_trigger");
             StopCoroutine(SwingPowerCooldown());
             StartCoroutine(SwingPowerCooldown());
         }
@@ -554,6 +559,7 @@ public class PlayerMovement : MonoBehaviour
             dashPowerActive = true;
             //Destroy(collider.gameObject);
             //powerupIndicator.gameObject.SetActive(true);
+            playerAnimation.SetTrigger("pickup_trigger");
             StopCoroutine(DashPowerCooldown());
             StartCoroutine(DashPowerCooldown());
         }
@@ -564,7 +570,7 @@ public class PlayerMovement : MonoBehaviour
     public Coroutine swingCoroutine;
     public Coroutine dashCoroutine;
 
-    IEnumerator WallrunPowerCooldown()
+    public IEnumerator WallrunPowerCooldown()
     {
         yield return new WaitForSeconds(powerupDuration);
         wallrunPowerActive = false;
@@ -572,7 +578,7 @@ public class PlayerMovement : MonoBehaviour
         wrScript.StopWallRun();
     }
 
-    IEnumerator GrapplePowerCooldown()
+    public IEnumerator GrapplePowerCooldown()
     {
         yield return new WaitForSeconds(powerupDuration);
         grapplePowerActive = false;
@@ -580,7 +586,7 @@ public class PlayerMovement : MonoBehaviour
         grappleScript.StopGrapple();
     }
 
-    IEnumerator SwingPowerCooldown()
+    public IEnumerator SwingPowerCooldown()
     {
         yield return new WaitForSeconds(powerupDuration);
         swingPowerActive = false;
@@ -588,12 +594,13 @@ public class PlayerMovement : MonoBehaviour
         swingScript.StopSwing();
     }
 
-    IEnumerator DashPowerCooldown()
+    public IEnumerator DashPowerCooldown()
     {
         yield return new WaitForSeconds(powerupDuration);
         dashPowerActive = false;
         //powerupIndicator.gameObject.SetActive(false);
         dashScript.ResetDash();
     }
+        
 
 }

@@ -32,6 +32,9 @@ public class BossController : MonoBehaviour
     public float AOEsize;
     public float projectileLaunchForce;
 
+    public Animator golemAnimation;
+    public GameObject golemObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +42,13 @@ public class BossController : MonoBehaviour
         melee = GameObject.Find("Melee Range").GetComponent<MeleeAttack>();
 
         InvokeRepeating("aggro", attackRate, attackRate);
+
+        golemAnimation = GetComponent<Animator>();
+
+        golemAnimation.SetBool("is_dead", false);
     }
+
+    //Vector3 golemOffset = (0, 90, 0);
 
     // Update is called once per frame
     void Update()
@@ -66,6 +75,7 @@ public class BossController : MonoBehaviour
         if (health == 0)
         {
             isDefeated = true;
+            golemAnimation.SetBool("is_dead", true);
         }
 
         //Temp kill switch
@@ -95,13 +105,15 @@ public class BossController : MonoBehaviour
         {
             melee.meleeAttack();
             Debug.Log("Melee Attack");
+            golemAnimation.SetBool("attack_type", true);
         }
         else
         {
             Instantiate(projectile, transform.position, transform.rotation);
             Debug.Log("Range Attack");
+            golemAnimation.SetBool("attack_type", false);
         }
-
+        golemAnimation.SetTrigger("attack_trigger");
     }
 
     IEnumerator endAggro()

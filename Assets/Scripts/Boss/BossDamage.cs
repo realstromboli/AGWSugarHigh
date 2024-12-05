@@ -15,6 +15,8 @@ public class BossDamage : MonoBehaviour
 
     private bool canDamage = true;
 
+    public BossController golemScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class BossDamage : MonoBehaviour
 
         player = GameObject.Find("Player");
         playerRB = GameObject.Find("Player").GetComponent<Rigidbody>();
+        
     }
 
     // Update is called once per frame
@@ -39,6 +42,7 @@ public class BossDamage : MonoBehaviour
 
             Debug.Log("Boss Health: " + boss.health);
 
+            golemScript.golemAnimation.SetTrigger("hurt_trigger");
 
             if (boss.health > 0)
             {
