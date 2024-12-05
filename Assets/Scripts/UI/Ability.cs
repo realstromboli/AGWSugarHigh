@@ -14,7 +14,7 @@ public class Ability : MonoBehaviour
     void Start()
     {
         abilityManager = GameObject.Find("UI").GetComponent<AbilityUI>();
-        timer = GameObject.Find("Ability Duration").GetComponent<Timer>();
+        timer = GetComponentInChildren<Timer>();
         timer.time = 30;
         timer.timerOn = true;
     }

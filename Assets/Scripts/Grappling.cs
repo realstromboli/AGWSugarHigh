@@ -28,6 +28,8 @@ public class Grappling : MonoBehaviour
 
     private bool grappling;
 
+    public ParticleSystem grappleFailParticles;
+
     void Start()
     {
         pmScript = GetComponent<PlayerMovement>();
@@ -78,6 +80,8 @@ public class Grappling : MonoBehaviour
             grapplePoint = cam.position + cam.forward * maxGrappleDistance;
 
             Invoke(nameof(StopGrapple), grappleDelayTime);
+
+            grappleFailParticles.Play();
         }
 
         lineRenderer.enabled = true;

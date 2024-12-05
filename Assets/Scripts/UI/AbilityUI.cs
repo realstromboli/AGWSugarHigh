@@ -32,7 +32,7 @@ public class AbilityUI : MonoBehaviour
             {
                 wallRunScreen.SetActive(true);
                 
-                wallRunScreen.transform.localPosition = new Vector3(-75, -15 + 70 * abilities.Count, 0);
+                wallRunScreen.transform.localPosition = new Vector3(-75, -15 - 70 * abilities.Count, 0);
                 abilities.Add(wallRunScreen);
             }
         }
