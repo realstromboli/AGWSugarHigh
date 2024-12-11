@@ -32195,7 +32195,7 @@ PrefabInstance:
       objectReference: {fileID: 423574205}
     - target: {fileID: 8421802834845275674, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: m_Name
-      value: Player
+      value: PlayerOLD
       objectReference: {fileID: 0}
     - target: {fileID: 8421802834845275674, guid: 566735dc43d525148af4214ec946b3e8, type: 3}
       propertyPath: m_IsActive
@@ -112699,7 +112699,7 @@ PrefabInstance:
       objectReference: {fileID: 423574205}
     - target: {fileID: 6423622287059414566, guid: 8f1c400c9f2a1d3488533f62c7aaeb65, type: 3}
       propertyPath: m_Name
-      value: Player Animated
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7500551484355208566, guid: 8f1c400c9f2a1d3488533f62c7aaeb65, type: 3}
       propertyPath: m_LocalPosition.x
