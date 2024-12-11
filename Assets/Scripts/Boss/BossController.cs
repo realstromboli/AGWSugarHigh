@@ -75,7 +75,7 @@ public class BossController : MonoBehaviour
         if (health == 0)
         {
             isDefeated = true;
-            golemAnimation.SetBool("is_dead", true);
+            //golemAnimation.SetBool("is_dead", true);
         }
 
         //Temp kill switch

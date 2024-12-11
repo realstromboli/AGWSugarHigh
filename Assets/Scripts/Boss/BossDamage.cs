@@ -48,6 +48,7 @@ public class BossDamage : MonoBehaviour
         {
             //Takes health from boss
             boss.health--;
+            golemScript.golemAnimation.SetTrigger("hurt_trigger");
 
             Debug.Log("Boss Health: " + boss.health);
 
@@ -62,7 +63,8 @@ public class BossDamage : MonoBehaviour
             if (boss.health == 0)
             {
                 health1.sprite = unwrapped;
-            golemScript.golemAnimation.SetTrigger("hurt_trigger");
+                golemScript.golemAnimation.SetBool("is_dead", true);
+
 
                 win_lose.callWin();
             }
