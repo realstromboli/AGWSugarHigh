@@ -2165,7 +2165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4818494116924095882, guid: 5408a31d13f6ed4429a0eb76b02c9793, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.31
+      value: 1.51
       objectReference: {fileID: 0}
     - target: {fileID: 4818494116924095882, guid: 5408a31d13f6ed4429a0eb76b02c9793, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8838,7 +8838,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is a grapple pickup, right click on a wall to be pulled towarard it!!
+  m_text: This is a grapple pickup, right click on a wall to be pulled toward it!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13293,11 +13293,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4818494116924095882, guid: 5408a31d13f6ed4429a0eb76b02c9793, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.92
+      value: 1.12
       objectReference: {fileID: 0}
     - target: {fileID: 4818494116924095882, guid: 5408a31d13f6ed4429a0eb76b02c9793, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -124.95039
+      value: -126.54
       objectReference: {fileID: 0}
     - target: {fileID: 4818494116924095882, guid: 5408a31d13f6ed4429a0eb76b02c9793, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18624,7 +18624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4818494116924095882, guid: 5408a31d13f6ed4429a0eb76b02c9793, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.32
+      value: 1.53
       objectReference: {fileID: 0}
     - target: {fileID: 4818494116924095882, guid: 5408a31d13f6ed4429a0eb76b02c9793, type: 3}
       propertyPath: m_LocalPosition.z

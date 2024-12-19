@@ -12,6 +12,7 @@ public class Win_Lose : MonoBehaviour
 
     public float minDeath = -10;
     public bool gameEnd = false;
+    public bool noMoreScreens = false;
 
     public GameObject winScreen;
     public GameObject loseScreen;
@@ -28,6 +29,7 @@ public class Win_Lose : MonoBehaviour
 
         loseScreen = GameObject.Find("Lose Screen");
         loseScreen.SetActive(false);
+        noMoreScreens = false;
     }
 
     // Update is called once per frame
@@ -66,7 +68,7 @@ public class Win_Lose : MonoBehaviour
             //Calls win state
             callWin();
         }
-        if (other.gameObject.tag == "KillZone")
+        if (other.gameObject.tag == "KillZone" && !noMoreScreens)
         {
             //Calls lose state
             callLose();
@@ -111,5 +113,6 @@ public class Win_Lose : MonoBehaviour
 
         //Shows lose screen
         loseScreen.SetActive(true);
+        noMoreScreens = true;
     }
 }

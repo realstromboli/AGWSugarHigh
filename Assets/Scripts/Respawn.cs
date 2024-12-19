@@ -9,6 +9,8 @@ public class Respawn : MonoBehaviour
 
     private GameManager gameManager;
     private Win_Lose winLose;
+    public PlayerMovement pmScript;
+    public Win_Lose wlScript;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +45,8 @@ public class Respawn : MonoBehaviour
 
     public void loseRespawn()
     {
+        
+        
         //Starts game movement
         Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1;
@@ -52,5 +56,15 @@ public class Respawn : MonoBehaviour
         //Resets game
         winLose.gameEnd = false;
         winLose.loseScreen.SetActive(false);
+
+        StartCoroutine(respawnDelayThing());
+    }
+
+
+
+    public IEnumerator respawnDelayThing()
+    {
+        yield return new WaitForSeconds(1);
+        wlScript.noMoreScreens = false;
     }
 }
