@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    private bool[] levelsUnlocked = {true, true, false, false, false, false};
+    private bool[] levelsUnlocked = {true, true, true, true, true, true};
 
     public void StartGame()
     {
