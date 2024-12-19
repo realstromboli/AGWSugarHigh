@@ -9330,6 +9330,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7248616118097933939, guid: 9546d00873b3606499ae2b4c935821ed, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7248616118097933939, guid: 9546d00873b3606499ae2b4c935821ed, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 29d7537059135154590b96daa836e6cb, type: 2}
     - target: {fileID: 7668229765053813237, guid: 9546d00873b3606499ae2b4c935821ed, type: 3}
       propertyPath: m_Name
       value: Boss

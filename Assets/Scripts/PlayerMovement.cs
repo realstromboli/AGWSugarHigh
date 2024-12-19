@@ -68,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
     public Grappling grappleScript;
     public Swinging swingScript;
     public Dashing dashScript;
+    public AbilityUI abilityUIScript;
 
     public Ability wallRunUI;
     public Ability grappleUI;
@@ -102,6 +103,7 @@ public class PlayerMovement : MonoBehaviour
         wrScript = GetComponent<WallRunning>();
         grappleScript = GetComponent<Grappling>();
         playerAnimation = GetComponent<Animator>();
+        abilityUIScript = GameObject.Find("UI").GetComponent<AbilityUI>();
     }
 
     
@@ -601,6 +603,23 @@ public class PlayerMovement : MonoBehaviour
         //powerupIndicator.gameObject.SetActive(false);
         dashScript.ResetDash();
     }
-        
 
+    
+
+    public void lmao()
+    {
+        wallrunPowerActive = false;
+        swingPowerActive = false;
+        grapplePowerActive = false;
+        dashPowerActive = false;
+        StopAllCoroutines();
+        abilityUIScript.wallRunScreen.SetActive(false);
+        abilityUIScript.grappleScreen.SetActive(false);
+        abilityUIScript.swingScreen.SetActive(false);
+        abilityUIScript.dashScreen.SetActive(false);
+        abilityUIScript.removefromList("wallRun");
+        abilityUIScript.removefromList("grapple");
+        abilityUIScript.removefromList("swing");
+        abilityUIScript.removefromList("dash");
+    }
 }

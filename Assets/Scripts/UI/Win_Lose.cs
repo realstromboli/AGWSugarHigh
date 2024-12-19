@@ -12,7 +12,6 @@ public class Win_Lose : MonoBehaviour
 
     public float minDeath = -10;
     public bool gameEnd = false;
-    public bool noMoreScreens = false;
 
     public GameObject winScreen;
     public GameObject loseScreen;
@@ -29,7 +28,6 @@ public class Win_Lose : MonoBehaviour
 
         loseScreen = GameObject.Find("Lose Screen");
         loseScreen.SetActive(false);
-        noMoreScreens = false;
     }
 
     // Update is called once per frame
@@ -39,7 +37,8 @@ public class Win_Lose : MonoBehaviour
         if (gameObject.transform.position.y < minDeath)
         {
             //Calls the lose state
-            callLose();
+            Debug.Log("Respawning");
+            respawn.respawn();
         }
 
         //Resets the level once the game has ended
@@ -60,7 +59,9 @@ public class Win_Lose : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    
+
+    public void OnTriggerEnter(Collider other)
     {
         //If the character makes it to the end, they win!
         if (other.gameObject.tag == "WinZone")
@@ -68,10 +69,10 @@ public class Win_Lose : MonoBehaviour
             //Calls win state
             callWin();
         }
-        if (other.gameObject.tag == "KillZone" && !noMoreScreens)
+        if (other.gameObject.tag == "KillZone")
         {
             //Calls lose state
-            callLose();
+            respawn.respawn();
         }
 
         //Updates Respawn Point when touching Checkpoints
@@ -113,6 +114,5 @@ public class Win_Lose : MonoBehaviour
 
         //Shows lose screen
         loseScreen.SetActive(true);
-        noMoreScreens = true;
     }
 }

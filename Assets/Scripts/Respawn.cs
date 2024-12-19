@@ -10,7 +10,6 @@ public class Respawn : MonoBehaviour
     private GameManager gameManager;
     private Win_Lose winLose;
     public PlayerMovement pmScript;
-    public Win_Lose wlScript;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +17,7 @@ public class Respawn : MonoBehaviour
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         player = GameObject.Find("Player");
         winLose = GameObject.Find("Player").GetComponent<Win_Lose>();
+        pmScript = GameObject.Find("Player").GetComponent<PlayerMovement>();
 
         respawnPoint = player.transform.position;
         Debug.Log(player.transform.position);
@@ -37,16 +37,22 @@ public class Respawn : MonoBehaviour
         Debug.Log("Checkpoint Reached!");
     }
 
+    public WallRunning wrScript;
+    public Swinging swingScript;
+    public Grappling grappleScript;
+
     public void respawn()
     {
         Debug.Log("respawning");
         player.transform.position = respawnPoint;
+
+        Debug.Log("stopping coroutines");
+        pmScript.lmao();
+        Debug.Log("lmao");
     }
 
     public void loseRespawn()
     {
-        
-        
         //Starts game movement
         Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1;
@@ -56,15 +62,5 @@ public class Respawn : MonoBehaviour
         //Resets game
         winLose.gameEnd = false;
         winLose.loseScreen.SetActive(false);
-
-        StartCoroutine(respawnDelayThing());
-    }
-
-
-
-    public IEnumerator respawnDelayThing()
-    {
-        yield return new WaitForSeconds(1);
-        wlScript.noMoreScreens = false;
     }
 }
